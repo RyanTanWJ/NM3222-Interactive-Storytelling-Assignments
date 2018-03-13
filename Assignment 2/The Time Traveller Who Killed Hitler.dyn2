@@ -1,0 +1,35 @@
+{
+  "story":{
+    "title":"The Time Traveller Who Killed Hitler",
+    "author":"Ryan Tan Wen Jun A0135747X",
+    "description":"",
+    "metadata":{
+      "comments":"Requirements:\n\n1)\n\n2)\n\n3)\n\n4)\n\nReading References:\n\n1)\n\n2)\n\nPlay Item References:\n\n1)\n\n2)\n",
+      "readerStyle":"standard",
+      "backDisabled":false,
+      "restartDisabled":false
+    },
+    "nodes":[{
+      "id":0,
+      "name":"Intro",
+      "content":{
+        "text":"",
+        "rulesets":[]
+      },
+      "isStart":true,
+      "rules":[]
+    }],
+    "facts":[],
+    "rules":[]
+  },
+  "plugins":{
+    "Default Story Viewer":{
+      "zoomLevel":1.0,
+      "nodes":[{
+        "id":0,
+        "x":405.0,
+        "y":51.0
+      }]
+    }
+  }
+}
