@@ -10,6 +10,375 @@
       "restartDisabled":false
     },
     "nodes":[{
+      "id":6,
+      "name":"Inter-Dimensional Travel",
+      "content":{
+        "text":"Any-and-All-Time\nAny-and-Every-Where\n\nYou are pulled into a dimension between time and space.\nFrom here, you can be anywhere and everywhere.\nAt any time and at all times.\n\nBut time travel has its limits, your pocket watch can only bring you so far.\nIt was wise of you to chart out all possible paths in case of any hiccups.\nYou've also accounted for your return trip to your own time less you are stranded when you do not belong.\n\nThe only thing that's left to do is to choose when you want to go:\nBirth of Baby Hitler\nHitler's Rejection from Arts School\n_____________________________________________________________________________________\nYou fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nWith the bleeding stopped, it is time to choose when you next want to go:\nHitler's Rejection from Arts School\nSparing of Hitler in World War I\n_____________________________________________________________________________________\n\n",
+        "rulesets":[{
+          "id":1,
+          "name":"IDT - 0",
+          "start":38,
+          "end":498,
+          "rules":[{
+            "id":1,
+            "name":"IDT - 0",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":2,
+          "name":"IDT - 0 - Birth",
+          "start":498,
+          "end":519,
+          "rules":[{
+            "id":2,
+            "name":"IDT - 0 - Birth",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":3,
+            "name":"To Birth",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":1
+                }
+              }
+            }]
+          }]
+        },{
+          "id":3,
+          "name":"IDT - 0 - Rejection",
+          "start":519,
+          "end":555,
+          "rules":[{
+            "id":4,
+            "name":"IDT - 0 - Birth",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":5,
+            "name":"To Rejection",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":2
+                }
+              }
+            }]
+          }]
+        },{
+          "id":70,
+          "name":"IDT - 1",
+          "start":641,
+          "end":1131,
+          "rules":[{
+            "id":130,
+            "name":"IDT - 1",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":71,
+          "name":"IDT - 1 - Rejection",
+          "start":1131,
+          "end":1167,
+          "rules":[{
+            "id":131,
+            "name":"IDT - 1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":132,
+            "name":"To Rejection",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":2
+                }
+              }
+            }]
+          }]
+        },{
+          "id":72,
+          "name":"IDT - 1 - WWI",
+          "start":1167,
+          "end":1200,
+          "rules":[{
+            "id":133,
+            "name":"IDT - 1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":134,
+            "name":"To WWI",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":3
+                }
+              }
+            }]
+          }]
+        }]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":0,
+      "name":"Intro",
+      "content":{
+        "text":"November 20, 3024\nA Motel Room in the Middle of Nowhere\n\nYou pick up your pistol and check the magazine once again.\n\nFully loaded.\n\nYou reload the magazine, cock the gun and turn the safety on.\nYou place the weapon down and turn your attention to your pocket watch.\n\nIt would pass for an ordinary pocket watch, but for those who know how to use it, it was a key to the universe.\nYou holster your firearm and keep the watch in your chest pocket.\n\nYou zip up your backpack and take a deep breath.\n\nFinally, you are ready.\n\nTime to kill Hitler.               ",
+        "rulesets":[{
+          "id":69,
+          "name":"Time Travel",
+          "start":521,
+          "end":556,
+          "rules":[{
+            "id":129,
+            "name":"Time Travel Dimension",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":6
+                }
+              }
+            }]
+          }]
+        }]
+      },
+      "isStart":true,
+      "rules":[]
+    },{
       "id":10,
       "name":"Why Part 2",
       "content":{
@@ -1440,180 +1809,6 @@
                 "node":{
                   "type":"node",
                   "value":10
-                }
-              }
-            }]
-          }]
-        }]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":6,
-      "name":"Inter-Dimensional Travel",
-      "content":{
-        "text":"Any-and-All-Time\nAny-and-Every-Where\n\nYou are pulled into a dimension between time and space.\nFrom here, you can be anywhere and everywhere.\nAt any time and at all times.\n\nBut time travel has its limits, your pocket watch can only bring you so far.\nIt was wise of you to chart out all possible paths in case of any hiccups.\nYou've also accounted for your return trip to your own time less you are stranded when you do not belong.\n\nThe only thing that's left to do is to choose where you want to go:\nBirth of Baby Hitler\nHitler's Rejection from Arts School\n_____________________________________________________________________________________\n",
-        "rulesets":[{
-          "id":1,
-          "name":"IDT - 0",
-          "start":38,
-          "end":499,
-          "rules":[{
-            "id":1,
-            "name":"IDT - 0",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          }]
-        },{
-          "id":2,
-          "name":"IDT - 0 - Birth",
-          "start":499,
-          "end":520,
-          "rules":[{
-            "id":2,
-            "name":"IDT - 0 - Birth",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":3,
-            "name":"To Birth",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":1
-                }
-              }
-            }]
-          }]
-        },{
-          "id":3,
-          "name":"IDT - 0 - Rejection",
-          "start":520,
-          "end":556,
-          "rules":[{
-            "id":4,
-            "name":"IDT - 0 - Birth",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":5,
-            "name":"To Rejection",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":2
                 }
               }
             }]
@@ -5197,36 +5392,6 @@
       "isStart":false,
       "rules":[]
     },{
-      "id":0,
-      "name":"Intro",
-      "content":{
-        "text":"November 20, 3024\nA Motel Room in the Middle of Nowhere\n\nYou pick up your pistol and check the magazine once again.\n\nFully loaded.\n\nYou reload the magazine, cock the gun and turn the safety on.\nYou place the weapon down and turn your attention to your pocket watch.\n\nIt would pass for an ordinary pocket watch, but for those who know how to use it, it was a key to the universe.\nYou holster your firearm and keep the watch in your chest pocket.\n\nYou zip up your backpack and take a deep breath.\n\nFinally, you are ready.\n\nTime to kill Hitler.               ",
-        "rulesets":[{
-          "id":0,
-          "name":"Time",
-          "start":521,
-          "end":525,
-          "rules":[{
-            "id":0,
-            "name":"Time Travel Dimension",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":6
-                }
-              }
-            }]
-          }]
-        }]
-      },
-      "isStart":true,
-      "rules":[]
-    },{
       "id":5,
       "name":"End of WWII",
       "content":{
@@ -5358,7 +5523,7 @@
       },{
         "id":0,
         "x":331.25,
-        "y":33.5
+        "y":32.25
       },{
         "id":5,
         "x":1703.75,
