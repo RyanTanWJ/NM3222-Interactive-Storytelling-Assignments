@@ -10,6 +10,76 @@
       "restartDisabled":false
     },
     "nodes":[{
+      "id":8,
+      "name":"By What Right?",
+      "content":{
+        "text":"\"You claim this is in the name of God, but can you justify your claim?\" Hitler challenges.\n\n\"God's will is absolute, it is not our place to question Him.\"\n\"I do not have to justify myself to you. Only Him.\"\n____________________________________________________________________________________________________\n\"For all your righteousness, does that justify that you seek to murder me?\" Hitler challenges.\n\n\"Yes, your life in exchange for millions. It is the right thing to do.\"\n\"No, I will carry that with me. But you cannot be allowed to live.\"\n____________________________________________________________________________________________________",
+        "rulesets":[{
+          "id":97,
+          "name":"Right - God - Hitler/Tandey",
+          "start":0,
+          "end":92,
+          "rules":[{
+            "id":174,
+            "name":"Right - 0-0",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"LinkCondition",
+              "params":{
+                "link":{
+                  "type":"link",
+                  "value":88
+                },
+                "status":{
+                  "type":"selectedListValue",
+                  "value":"followed"
+                }
+              }
+            },{
+              "conditionType":"LinkCondition",
+              "params":{
+                "link":{
+                  "type":"link",
+                  "value":48
+                },
+                "status":{
+                  "type":"selectedListValue",
+                  "value":"followed"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":98,
+          "name":"Right - God - Answer 1",
+          "start":92,
+          "end":155,
+          "rules":[]
+        },{
+          "id":99,
+          "name":"Right - God - Answer 2",
+          "start":155,
+          "end":207,
+          "rules":[]
+        }]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
       "id":3,
       "name":"Spared in WWI",
       "content":{
@@ -7176,15 +7246,6 @@
     },{
       "id":11,
       "name":"What Part 2",
-      "content":{
-        "text":"",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":8,
-      "name":"By What Right?",
       "content":{
         "text":"",
         "rulesets":[]
