@@ -10,6 +10,51 @@
       "restartDisabled":false
     },
     "nodes":[{
+      "id":12,
+      "name":"Goal Part 2",
+      "content":{
+        "text":"<Further elaboration on Peace/Control choices>",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":9,
+      "name":"What is your goal?",
+      "content":{
+        "text":"<Goals are either Peace (Inner or World), and Control (Over Fate/Over People)>",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":4,
+      "name":"Invasion of Poland",
+      "content":{
+        "text":"September 1, 1939\n10 Downing Street\n\nYou arrive ahead at midnight.\nEleven hours and fifteen minutes before Winston Churchill's radio broadcast.\nThe broadcast informing all of Britain that they were at war with Germany.\n\nYou walk up to the front porch and knock on the door.\nA few minutes later, a weary Winston Churchill opens the door.\n\n<You have a conversation with Winston Churchill that leads to him find out you are a time traveller and asking what your goals are.>",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":5,
+      "name":"End of WWII",
+      "content":{
+        "text":"April 30, 1945\nF\u00fchrerbunker, Berlin\n\n<This is where the finale will happen, including a scene where you confront the other time traveller (who is you from the altered future) and a scene where the player fights Hitler in a life or death situation.>",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":13,
+      "name":"Conclusion",
+      "content":{
+        "text":"<Wrap up the story here, multiple endings include dying post-WWII Berlin, or being stranded in the Time Travel Dimension.>",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
       "id":6,
       "name":"Inter-Dimensional Travel",
       "content":{
@@ -6771,24 +6816,6 @@
       "isStart":false,
       "rules":[]
     },{
-      "id":9,
-      "name":"What is your goal?",
-      "content":{
-        "text":"",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":12,
-      "name":"Goal Part 2",
-      "content":{
-        "text":"",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
       "id":1,
       "name":"Birth of Baby Hitler",
       "content":{
@@ -8308,33 +8335,6 @@
       },
       "isStart":false,
       "rules":[]
-    },{
-      "id":13,
-      "name":"Finale",
-      "content":{
-        "text":"",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":5,
-      "name":"End of WWII",
-      "content":{
-        "text":"April 30, 1945\nF\u00fchrerbunker, Berlin\n",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":4,
-      "name":"Invasion of Poland",
-      "content":{
-        "text":"September 1, 1939\nInvasion of Poland",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
     }],
     "facts":[{
       "id":11,
@@ -8448,7 +8448,7 @@
         "y":305.0
       },{
         "id":5,
-        "x":1703.75,
+        "x":1705.0,
         "y":61.25
       },{
         "id":4,
