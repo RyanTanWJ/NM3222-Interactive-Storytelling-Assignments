@@ -10,6 +10,15 @@
       "restartDisabled":false
     },
     "nodes":[{
+      "id":3,
+      "name":"Spared in WWI",
+      "content":{
+        "text":"September 28, 1918\nBattle of Cambri, WWI\n\nYou step out of the portal into a barren war torn land.\nThe first thing you notice is the unmistakable smell of gunpowder in the air.\nYou survey your surroundings and see corpses littered all over the battlefield.\nIt was deathly quiet, as though the land itself had died.\n\n\"I've got a bad feeling about this,\" you think to yourself.\nA gunshot breaks the silence, and a bullet flies pass your face, grazing your cheek.\n_________________________________________________________________________________________________\nOf all the places to be, you stepped right in the middle of No Man's Land.\nYou hit the floor as the machine gunners cranked their death machines.\nBullets fly overhead.\nYou search desperately for an out, and spot a crater created by artillery fire.\n\nCrawl\n_________________________________________________________________________________________________\nThe gunshots grow in intensity.\n\nBattlecries and screams fill the air.\n\nArtillery rains down indiscriminately killing men on both sides.\n\nCrawl\n_________________________________________________________________________________________________\nYou pull yourself into the crater, as cheers grow from the Allies' side.\nThere, lying wounded in front of you, a familiar face.\nAt 29 years old, Lance Corporal Hitler, was taking cover in the same crater as you.\n\nA young soldier slides into the crater, his rifle trained on Hitler.\nYou recognise him from old photos, Private Henry Tandey.\nThe man who could not shoot an injured opponent. The man who let Hitler go.\n_________________________________________________________________________________________________\n\"Do it,\" you tell Tandey.\n\n",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
       "id":6,
       "name":"Inter-Dimensional Travel",
       "content":{
@@ -5409,15 +5418,6 @@
       },
       "isStart":false,
       "rules":[]
-    },{
-      "id":3,
-      "name":"Spared in WWI",
-      "content":{
-        "text":"September 28, 1918\nCapture of Marcoing, WWI\nPrivate Henry Tandey",
-        "rulesets":[]
-      },
-      "isStart":false,
-      "rules":[]
     }],
     "facts":[{
       "id":10,
@@ -5481,21 +5481,29 @@
     "Default Story Viewer":{
       "zoomLevel":0.8,
       "nodes":[{
-        "id":2,
-        "x":962.0000000000001,
-        "y":62.00000000000001
+        "id":6,
+        "x":115.0,
+        "y":308.75
       },{
-        "id":1,
-        "x":669.0,
-        "y":52.00000000000001
+        "id":0,
+        "x":331.25,
+        "y":32.25
+      },{
+        "id":10,
+        "x":812.5,
+        "y":536.25
       },{
         "id":7,
         "x":813.75,
         "y":306.25
       },{
-        "id":6,
-        "x":115.0,
-        "y":308.75
+        "id":1,
+        "x":669.0,
+        "y":52.00000000000001
+      },{
+        "id":2,
+        "x":962.0000000000001,
+        "y":62.00000000000001
       },{
         "id":13,
         "x":1713.75,
@@ -5509,10 +5517,6 @@
         "x":1108.75,
         "y":541.25
       },{
-        "id":10,
-        "x":812.5,
-        "y":536.25
-      },{
         "id":9,
         "x":1371.25,
         "y":303.75
@@ -5520,10 +5524,6 @@
         "id":8,
         "x":1103.75,
         "y":305.0
-      },{
-        "id":0,
-        "x":331.25,
-        "y":32.25
       },{
         "id":5,
         "x":1703.75,
