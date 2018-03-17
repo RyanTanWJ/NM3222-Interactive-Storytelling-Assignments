@@ -10,6 +10,978 @@
       "restartDisabled":false
     },
     "nodes":[{
+      "id":5,
+      "name":"End of WWII",
+      "content":{
+        "text":"April 30, 1945\nF\u00fchrerbunker, Berlin\n\nYou step out of the portal with pistol drawn right into Hitler's office.\nThough you have just arrived, there is already a body on the floor.\nEva Braun, Hitler's wife of one day, dead by cyanide poisoning.\n\nHitler sits comfortably at his deck.\n\"Ah, Time Traveller. We meet again.\"\n\nYou are in no mood for a conversation and take aim at the Nazi dictator.\nSlowly you make your way across the room towards him.\n\n\"So hasty. How interesting that you have chosen to come here rather than return home,\" he mocks.\n\nYou stop. How does he know?\n\n<This is where the finale will happen, including a scene where you confront the other time traveller (who is you from the altered future) and a scene where the player fights Hitler in a life or death situation.>",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":6,
+      "name":"Inter-Dimensional Travel",
+      "content":{
+        "text":"Any-and-All-Time\nAny-and-Every-Where\n\nYou are pulled into a dimension between time and space.\nFrom here, you can be anywhere and everywhere.\nAt any time and at all times.\n\nBut time travel has its limits, your pocket watch can only bring you so far.\nYou will only be able to travel forwards in time after the initial jump back.\nAnd you cannot travel to a timezone where you have been before.\n\nIt was wise of you to chart out all possible paths in case of any hiccups.\nYou've also accounted for your return trip to your own time less you are stranded when you do not belong.\n\nThe only thing that's left to do is to choose when you want to go:\nBirth of Baby Hitler\nHitler's Rejection from Arts School\n_____________________________________________________________________________________\nYou fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nWith the bleeding stopped, it is time to choose when you next want to go:\nHitler's Rejection from Arts School\nSparing of Hitler in World War I\n_____________________________________________________________________________________\nAGAIN!\nWhoever this nuisance was, this was the second time your plans have been disrupted!\nYou check your pocket watch, the battery life read 50%.\nGood.\nYou still have a chance.\n\nYou pull out a surgical kit from your backpack and begin removing the bullets.\n_____________________________________________________________________________________\nFinally, the bullets are out and the stitches are cauterised.\nYou check your pocket watch again.\n30%.\n\nYou curse your luck.\nThe procedure took much longer than expected.\nBut that does not matter now.\nTime to pick when you next want to go:\n\nSparing of Hitler in World War I\nNazi Invasion of Poland\n_____________________________________________________________________________________\nYou check your pocket watch.\n10%.\n\nYou look at your temporal charts.\nYou search desperately for some route you may have missed but eventually accept it.\nYou have failed.\nThere is no way you can still accomplish your mission and return to your time.\n\nThis is your last choice:\nReturn home a failure OR make one last attempt to kill Hitler.",
+        "rulesets":[{
+          "id":1,
+          "name":"IDT - 0",
+          "start":38,
+          "end":641,
+          "rules":[{
+            "id":1,
+            "name":"IDT - 0",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":2,
+          "name":"IDT - 0 - Birth",
+          "start":641,
+          "end":662,
+          "rules":[{
+            "id":2,
+            "name":"IDT - 0 - Birth",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":3,
+            "name":"To Birth",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":1
+                }
+              }
+            }]
+          }]
+        },{
+          "id":3,
+          "name":"IDT - 0 - Rejection",
+          "start":662,
+          "end":698,
+          "rules":[{
+            "id":4,
+            "name":"IDT - 0 - Birth",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":5,
+            "name":"To Rejection",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":2
+                }
+              }
+            }]
+          }]
+        },{
+          "id":70,
+          "name":"IDT - 1",
+          "start":784,
+          "end":1274,
+          "rules":[{
+            "id":130,
+            "name":"IDT - 1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":135,
+            "name":"Only One Plan",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"NodeCondition",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":2
+                },
+                "status":{
+                  "type":"selectedListValue",
+                  "value":"visited"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":"You fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nUnfortunately, this interruption has left you with only one choice as to where you can go next:\n"
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":71,
+          "name":"IDT - 1 - Rejection",
+          "start":1274,
+          "end":1310,
+          "rules":[{
+            "id":131,
+            "name":"IDT - 1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            },{
+              "conditionType":"NodeCondition",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":2
+                },
+                "status":{
+                  "type":"selectedListValue",
+                  "value":"visited"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":132,
+            "name":"To Rejection",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":2
+                }
+              }
+            }]
+          }]
+        },{
+          "id":72,
+          "name":"IDT - 1 - WWI",
+          "start":1310,
+          "end":1343,
+          "rules":[{
+            "id":133,
+            "name":"IDT - 1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":134,
+            "name":"To WWI",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":3
+                }
+              }
+            }]
+          }]
+        },{
+          "id":105,
+          "name":"IDT - 2-0",
+          "start":1429,
+          "end":1659,
+          "rules":[{
+            "id":196,
+            "name":"IDT - 2-0",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":2
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":106,
+          "name":"IDT - 2-1 -> 3",
+          "start":1659,
+          "end":1685,
+          "rules":[{
+            "id":197,
+            "name":"IDT - 2-1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":2
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":238,
+            "name":"2 -> 3",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"UpdateIntegerFacts",
+              "params":{
+                "updateValue":{
+                  "type":"union",
+                  "value":"inputValue"
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "inputValue":{
+                  "type":"integer",
+                  "value":3
+                }
+              }
+            },{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":6
+                }
+              }
+            }]
+          }]
+        },{
+          "id":107,
+          "name":"IDT - 2-2",
+          "start":1685,
+          "end":1687,
+          "rules":[{
+            "id":198,
+            "name":"IDT - 2-2",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":2
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":108,
+          "name":"IDT - 3-1 - WWI",
+          "start":2013,
+          "end":2046,
+          "rules":[{
+            "id":199,
+            "name":"IDT - 3-1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":3
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":200,
+            "name":"Already Visited WWI",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"NodeCondition",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":3
+                },
+                "status":{
+                  "type":"selectedListValue",
+                  "value":"not visited"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":239,
+            "name":"To WWI",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":3
+                }
+              }
+            }]
+          }]
+        },{
+          "id":109,
+          "name":"IDT - 3-2 - Poland",
+          "start":2046,
+          "end":2070,
+          "rules":[{
+            "id":201,
+            "name":"IDT - 3-2",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":3
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":202,
+            "name":"To Poland",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":4
+                }
+              }
+            }]
+          }]
+        },{
+          "id":110,
+          "name":"IDT - 3-0",
+          "start":1773,
+          "end":2013,
+          "rules":[{
+            "id":203,
+            "name":"IDT - 3-0",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":3
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":141,
+          "name":"IDT - 4-0",
+          "start":2156,
+          "end":2432,
+          "rules":[{
+            "id":253,
+            "name":"IDT - 4-0",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":4
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":142,
+          "name":"IDT - 4-2",
+          "start":2453,
+          "end":2457,
+          "rules":[{
+            "id":254,
+            "name":"IDT - 4-2",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":4
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        },{
+          "id":143,
+          "name":"IDT - 4-1 Return Home",
+          "start":2432,
+          "end":2453,
+          "rules":[{
+            "id":255,
+            "name":"IDT - 4-1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":4
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":256,
+            "name":"Return Home",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":14
+                }
+              }
+            }]
+          }]
+        },{
+          "id":144,
+          "name":"IDT - 4-3 Last Attempt",
+          "start":2457,
+          "end":2494,
+          "rules":[{
+            "id":257,
+            "name":"IDT - 4-3",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":4
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":3
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":258,
+            "name":"Last Attempt",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":5
+                }
+              }
+            }]
+          }]
+        }]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
+      "id":14,
+      "name":"Return Home",
+      "content":{
+        "text":"November 20, 3024\nA Motel Room in the Middle of Nowhere\n\nYou step out of the portal and collapse on to your bed.\nAll that effort, and nothing has changed.\n\nYou decide to watch some TV.\nYour favourite sitcom should still be playing.\n\nYou turn the television on and a familiar face greets you.\nHitler.\n\n\"Welcome back, Time Traveller,\" he snickers.\n\nWhat have you done.\n\n***The End***\n\n",
+        "rulesets":[]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
       "id":12,
       "name":"Goal Part 2",
       "content":{
@@ -210,7 +1182,7 @@
                 },
                 "inputValue":{
                   "type":"integer",
-                  "value":3
+                  "value":4
                 }
               }
             },{
@@ -969,750 +1941,6 @@
                 "textInput":{
                   "type":"string",
                   "value":"\"Peace for whom?\" Churchill asks.\n"
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          }]
-        }]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":6,
-      "name":"Inter-Dimensional Travel",
-      "content":{
-        "text":"Any-and-All-Time\nAny-and-Every-Where\n\nYou are pulled into a dimension between time and space.\nFrom here, you can be anywhere and everywhere.\nAt any time and at all times.\n\nBut time travel has its limits, your pocket watch can only bring you so far.\nYou will only be able to travel forwards in time after the initial jump back.\nAnd you cannot travel to a timezone where you have been before.\n\nIt was wise of you to chart out all possible paths in case of any hiccups.\nYou've also accounted for your return trip to your own time less you are stranded when you do not belong.\n\nThe only thing that's left to do is to choose when you want to go:\nBirth of Baby Hitler\nHitler's Rejection from Arts School\n_____________________________________________________________________________________\nYou fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nWith the bleeding stopped, it is time to choose when you next want to go:\nHitler's Rejection from Arts School\nSparing of Hitler in World War I\n_____________________________________________________________________________________\nAGAIN!\nWhoever this nuisance was, this was the second time your plans have been disrupted!\nYou check your pocket watch, the battery life read 50%.\nGood.\nYou still have a chance.\n\nYou pull out a surgical kit from your backpack and begin removing the bullets.\n_____________________________________________________________________________________\nFinally, the bullets are out and the stitches are cauterised.\nYou check your pocket watch again.\n30%.\n\nYou curse your luck.\nThe procedure took much longer than expected.\nBut that does not matter now.\nTime to pick when you next want to go:\n\nSparing of Hitler in World War I\nNazi Invasion of Poland\n_____________________________________________________________________________________",
-        "rulesets":[{
-          "id":1,
-          "name":"IDT - 0",
-          "start":38,
-          "end":641,
-          "rules":[{
-            "id":1,
-            "name":"IDT - 0",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          }]
-        },{
-          "id":2,
-          "name":"IDT - 0 - Birth",
-          "start":641,
-          "end":662,
-          "rules":[{
-            "id":2,
-            "name":"IDT - 0 - Birth",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":3,
-            "name":"To Birth",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":1
-                }
-              }
-            }]
-          }]
-        },{
-          "id":3,
-          "name":"IDT - 0 - Rejection",
-          "start":662,
-          "end":698,
-          "rules":[{
-            "id":4,
-            "name":"IDT - 0 - Birth",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":5,
-            "name":"To Rejection",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":2
-                }
-              }
-            }]
-          }]
-        },{
-          "id":70,
-          "name":"IDT - 1",
-          "start":784,
-          "end":1274,
-          "rules":[{
-            "id":130,
-            "name":"IDT - 1",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":1
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":135,
-            "name":"Only One Plan",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"NodeCondition",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":2
-                },
-                "status":{
-                  "type":"selectedListValue",
-                  "value":"visited"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":"You fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nUnfortunately, this interruption has left you with only one choice as to where you can go next:\n"
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          }]
-        },{
-          "id":71,
-          "name":"IDT - 1 - Rejection",
-          "start":1274,
-          "end":1310,
-          "rules":[{
-            "id":131,
-            "name":"IDT - 1",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":1
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            },{
-              "conditionType":"NodeCondition",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":2
-                },
-                "status":{
-                  "type":"selectedListValue",
-                  "value":"visited"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":132,
-            "name":"To Rejection",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":2
-                }
-              }
-            }]
-          }]
-        },{
-          "id":72,
-          "name":"IDT - 1 - WWI",
-          "start":1310,
-          "end":1343,
-          "rules":[{
-            "id":133,
-            "name":"IDT - 1",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":1
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":134,
-            "name":"To WWI",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":3
-                }
-              }
-            }]
-          }]
-        },{
-          "id":105,
-          "name":"IDT - 2-0",
-          "start":1429,
-          "end":1659,
-          "rules":[{
-            "id":196,
-            "name":"IDT - 2-0",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":2
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          }]
-        },{
-          "id":106,
-          "name":"IDT - 2-1 -> 3",
-          "start":1659,
-          "end":1685,
-          "rules":[{
-            "id":197,
-            "name":"IDT - 2-1",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":2
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":238,
-            "name":"2 -> 3",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"UpdateIntegerFacts",
-              "params":{
-                "updateValue":{
-                  "type":"union",
-                  "value":"inputValue"
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "inputValue":{
-                  "type":"integer",
-                  "value":3
-                }
-              }
-            },{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":6
-                }
-              }
-            }]
-          }]
-        },{
-          "id":107,
-          "name":"IDT - 2-2",
-          "start":1685,
-          "end":1687,
-          "rules":[{
-            "id":198,
-            "name":"IDT - 2-2",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":2
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          }]
-        },{
-          "id":108,
-          "name":"IDT - 3-1 - WWI",
-          "start":2013,
-          "end":2046,
-          "rules":[{
-            "id":199,
-            "name":"IDT - 3-1",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":3
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":200,
-            "name":"Already Visited WWI",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"NodeCondition",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":3
-                },
-                "status":{
-                  "type":"selectedListValue",
-                  "value":"not visited"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":239,
-            "name":"To WWI",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":3
-                }
-              }
-            }]
-          }]
-        },{
-          "id":109,
-          "name":"IDT - 3-2 - Poland",
-          "start":2046,
-          "end":2070,
-          "rules":[{
-            "id":201,
-            "name":"IDT - 3-2",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":3
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":202,
-            "name":"To Poland",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":4
-                }
-              }
-            }]
-          }]
-        },{
-          "id":110,
-          "name":"IDT - 3-0",
-          "start":1773,
-          "end":2013,
-          "rules":[{
-            "id":203,
-            "name":"IDT - 3-0",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":3
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":3
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"not ="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
                 },
                 "text":{
                   "type":"union",
@@ -4846,15 +5074,6 @@
             }]
           }]
         }]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":5,
-      "name":"End of WWII",
-      "content":{
-        "text":"April 30, 1945\nF\u00fchrerbunker, Berlin\n\n<This is where the finale will happen, including a scene where you confront the other time traveller (who is you from the altered future) and a scene where the player fights Hitler in a life or death situation.>",
-        "rulesets":[]
       },
       "isStart":false,
       "rules":[]
@@ -10408,14 +10627,14 @@
   },
   "plugins":{
     "Default Story Viewer":{
-      "zoomLevel":0.40000000000000013,
+      "zoomLevel":0.8,
       "nodes":[{
         "id":9,
-        "x":1371.2499999999998,
+        "x":1371.2499999999995,
         "y":303.74999999999983
       },{
         "id":4,
-        "x":1461.9999999999998,
+        "x":1461.9999999999995,
         "y":65.50000000000001
       },{
         "id":3,
@@ -10423,23 +10642,23 @@
         "y":64.99999999999997
       },{
         "id":12,
-        "x":1379.9999999999998,
+        "x":1379.9999999999995,
         "y":534.9999999999998
       },{
         "id":5,
-        "x":1704.9999999999998,
-        "y":61.24999999999998
+        "x":1704.9999999999995,
+        "y":61.24999999999997
       },{
         "id":13,
-        "x":1713.7499999999993,
+        "x":1713.749999999999,
         "y":309.99999999999983
       },{
         "id":6,
-        "x":114.99999999999996,
+        "x":112.49999999999994,
         "y":308.74999999999983
       },{
         "id":0,
-        "x":113.74999999999996,
+        "x":113.74999999999994,
         "y":626.2499999999997
       },{
         "id":11,
@@ -10451,20 +10670,24 @@
         "y":304.99999999999983
       },{
         "id":10,
-        "x":812.4999999999999,
+        "x":812.4999999999998,
         "y":536.2499999999998
       },{
         "id":2,
-        "x":962.0000000000001,
-        "y":62.00000000000001
+        "x":962.0,
+        "y":62.0
       },{
         "id":7,
-        "x":813.7499999999999,
+        "x":813.7499999999998,
         "y":306.24999999999983
       },{
         "id":1,
-        "x":669.0,
-        "y":52.0
+        "x":668.9999999999999,
+        "y":51.99999999999999
+      },{
+        "id":14,
+        "x":559.9999999999998,
+        "y":767.4999999999998
       }]
     }
   }
