@@ -10,10 +10,485 @@
       "restartDisabled":false
     },
     "nodes":[{
+      "id":13,
+      "name":"Conclusion",
+      "content":{
+        "text":"The gunshot echoes throughout the large enclosed room.\n\nHitler's body goes limp. Your future self lets go of the body and walks over to you.\n\n\"Good job. History has been preserved. Your future will no longer be my present.\"\n\n\"But then how are you still here?\"\n\n\"There are infinite futures, I am from one of many. Stopping you was never going to change anything for me.\"\n\n\"Then why?\"\n\n\"Hope. To ensure that in these infinite timelines, there is hope.\"\n\nUsing their pocket watch, they open a portal.\n\n\"Come on, I'll drop you off on the way back.\"\n\n***The End***",
+        "rulesets":[{
+          "id":196,
+          "name":"Conclusion -> 1",
+          "start":142,
+          "end":225,
+          "rules":[{
+            "id":346,
+            "name":"0 -> 1",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":0
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateIntegerFacts",
+              "params":{
+                "updateValue":{
+                  "type":"union",
+                  "value":"inputValue"
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "inputValue":{
+                  "type":"integer",
+                  "value":1
+                }
+              }
+            },{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":13
+                }
+              }
+            }]
+          }]
+        },{
+          "id":197,
+          "name":"Conclusion >0 -> 2",
+          "start":225,
+          "end":261,
+          "rules":[{
+            "id":347,
+            "name":"Conclusion >0",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"<"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":348,
+            "name":"1 -> 2",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":1
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateIntegerFacts",
+              "params":{
+                "updateValue":{
+                  "type":"union",
+                  "value":"inputValue"
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "inputValue":{
+                  "type":"integer",
+                  "value":2
+                }
+              }
+            },{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":13
+                }
+              }
+            }]
+          }]
+        },{
+          "id":198,
+          "name":"Conclusion >1 -> 3",
+          "start":261,
+          "end":371,
+          "rules":[{
+            "id":349,
+            "name":"Conclusion >1",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":2
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"<"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":350,
+            "name":"2 -> 3",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":2
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateIntegerFacts",
+              "params":{
+                "updateValue":{
+                  "type":"union",
+                  "value":"inputValue"
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "inputValue":{
+                  "type":"integer",
+                  "value":3
+                }
+              }
+            },{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":13
+                }
+              }
+            }]
+          }]
+        },{
+          "id":199,
+          "name":"Conclusion >2 -> 4",
+          "start":371,
+          "end":384,
+          "rules":[{
+            "id":351,
+            "name":"Conclusion >2",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":3
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"<"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":352,
+            "name":"3 -> 4",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":3
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateIntegerFacts",
+              "params":{
+                "updateValue":{
+                  "type":"union",
+                  "value":"inputValue"
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "inputValue":{
+                  "type":"integer",
+                  "value":4
+                }
+              }
+            },{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":13
+                }
+              }
+            }]
+          }]
+        },{
+          "id":200,
+          "name":"Conclusion >3 -> 5",
+          "start":384,
+          "end":452,
+          "rules":[{
+            "id":353,
+            "name":"Conclusion >3",
+            "stopIfTrue":true,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":4
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"<"
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          },{
+            "id":354,
+            "name":"4 -> 5",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[],
+            "actions":[{
+              "actionType":"UpdateIntegerFacts",
+              "params":{
+                "updateValue":{
+                  "type":"union",
+                  "value":"inputValue"
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "inputValue":{
+                  "type":"integer",
+                  "value":5
+                }
+              }
+            },{
+              "actionType":"LinkTo",
+              "params":{
+                "node":{
+                  "type":"node",
+                  "value":13
+                }
+              }
+            }]
+          }]
+        },{
+          "id":201,
+          "name":"Conclusion 5",
+          "start":452,
+          "end":559,
+          "rules":[{
+            "id":355,
+            "name":"Conclusion 5",
+            "stopIfTrue":false,
+            "conditionsOp":"or",
+            "conditions":[{
+              "conditionType":"IntegerFactComparison",
+              "params":{
+                "input":{
+                  "type":"integer",
+                  "value":5
+                },
+                "fact":{
+                  "type":"integerFact",
+                  "value":16
+                },
+                "comparisonValue":{
+                  "type":"union",
+                  "value":"input"
+                },
+                "operator":{
+                  "type":"selectedListValue",
+                  "value":"not ="
+                }
+              }
+            }],
+            "actions":[{
+              "actionType":"UpdateText",
+              "params":{
+                "textInput":{
+                  "type":"string",
+                  "value":""
+                },
+                "text":{
+                  "type":"union",
+                  "value":"textInput"
+                }
+              }
+            }]
+          }]
+        }]
+      },
+      "isStart":false,
+      "rules":[]
+    },{
       "id":5,
       "name":"End of WWII",
       "content":{
-        "text":"April 30, 1945\nF\u00fchrerbunker, Berlin\n\nYou step out of the portal with pistol drawn right into Hitler's office.\nThough you have just arrived, there is already a body on the floor.\nEva Braun, Hitler's wife of one day, dead by cyanide poisoning.\n\nHitler sits comfortably at his deck.\n\"Ah, Time Traveller. We meet again.\"\n\nYou are in no mood for a conversation and take aim at the Nazi dictator.\nSlowly, you make your way across the room towards him.\n________________________________________________________________________________________________\n\"Why did you even come here? You are too late to stop me.\" Hitler asks.\n\nYou walk faster towards him.\n\n\"So hasty. We have not even talked about how you have chosen to come here rather than return home,\" he mocks.\n\nYou stop. How does he know?\n\nFrom a dark corner of the room, the hooded figure appears.\n________________________________________________________________________________________________\nThe other time traveller walks up to you, unfazed by the gun in your hand.\n\n\"Who are you?\"\n\nThe figure removes the hood, ski mask and goggles.\n\nBehind the mask, is you. Their skin is worn and scarred, but they are unmistakably you.\n\n\"I am you ten years later.\"\n________________________________________________________________________________________________\n\"Why are you here?\"\n\n\"To stop you from killing Hitler.\"\n\n\"That was obvious from the start! WHY are you trying to stop me?\"\n\n\"Because you don't know the consequences of your actions!\"\n\n\"I know killing him will change something!\"\n\n\"It will not bring the change you think!\"\n________________________________________________________________________________________________\n\"What then? What changes?\" you scream at yourself.\n\n\"By 3030, the world falls into a dystopia. A mad man establishes a dictatorship and uploads his consciousness to the internet, ensuring his rule lasts forever.\"\n________________________________________________________________________________________________\n\"What does any of that have to do with Hitler?\" you question.\n\n\"The mad man is a descendant of a Jew who would have died in Auschwitz.\"\n________________________________________________________________________________________________\nHitler applauds and laughs.\n\n\"Truly, there has been no tale with a greater turn of events than this,\" he mocks, \"but it is time for this farce to end.\"\n\nHitler pulls a pistol from under his desk and opens fire.\n________________________________________________________________________________________________\nYour future self pushes you to the ground at the first gunshot.\n\nYou roll behind some furniture for cover as Hitler reloads.\n\nYou are safe but something is wrong.\n\nYou are alone.\n________________________________________________________________________________________________\nYour future self lies in a pool of blood, unmoving. Next to him is your pistol.\n\n\"Fuck.\"\n\nYou must have dropped it when you hit the floor.\n\nHitler notices you dropped your gun too. He shoots at it, breaking it into pieces.\n\nHe keeps you pinned behind the coffee table that protects you, laughing maniacally as he closes in.\n\nOnly one thing left to do now:\n\nCharge Hitler.\n________________________________________________________________________________________________\nYou wait for the reload and step out from behind cover to charge Hitler.\n\nAs you do, Hitler shoots you in the shoulder.\n\nYou fall backwards in pain as Hitler marches up to you and stomps on your wounded shoulder.\n\n\"Foolish Time Traveller! Can you not count bullets?\" He mocks you.\n\nGet him off.\n________________________________________________________________________________________________\nYou grab his foot and try to lift it off.\n\nPush.\n________________________________________________________________________________________________\n\"Goodbye, Time Traveller,\" Hitler takes aim.\n\nYou stare down the barrel of the gun.\n\nThis is it.\n\nHitler squeezes the trigger.\n________________________________________________________________________________________________\nThe bullet narrowly misses you.\n\nYour future self tackles Hitler and wrestles the gun away from him.\n\nHe kicks Hitler's pistol over to you.\n\nPick it up.\n________________________________________________________________________________________________\n\"NO!\" Hitler screams.\n\nAim.\n\nHitler struggles to break free.\n\nFire.",
+        "text":"April 30, 1945\nF\u00fchrerbunker, Berlin\n\nYou step out of the portal with pistol drawn right into Hitler's office.\nThough you have just arrived, there is already a body on the floor.\nEva Braun, Hitler's wife of one day, dead by cyanide poisoning.\n\nHitler sits comfortably at his deck.\n\"Ah, Time Traveller. We meet again.\"\n\nYou are in no mood for a conversation and take aim at the Nazi dictator.\nSlowly, you make your way across the room towards him.\n________________________________________________________________________________________________\n\"Why did you even come here? You are too late to stop me.\" Hitler asks.\n\nYou walk faster towards him.\n\n\"So hasty. We have not even talked about how you have chosen to come here rather than return home,\" he mocks.\n\nYou stop. How does he know?\n\nFrom a dark corner of the room, the hooded figure appears.\n________________________________________________________________________________________________\nThe other time traveller walks up to you, unfazed by the gun in your hand.\n\n\"Who are you?\"\n\nThe figure removes the hood, ski mask and goggles.\n\nBehind the mask, is you. Their skin is worn and scarred, but they are unmistakably you.\n\n\"I am you ten years later.\"\n________________________________________________________________________________________________\n\"Why are you here?\"\n\n\"To stop you from killing Hitler.\"\n\n\"That was obvious from the start! WHY are you trying to stop me?\"\n\n\"Because you don't know the consequences of your actions!\"\n\n\"I know killing him will change something!\"\n\n\"It will not bring the change you think!\"\n________________________________________________________________________________________________\n\"What then? What changes?\" you scream at yourself.\n\n\"By 3030, the world falls into a dystopia. A mad man establishes a dictatorship and uploads his consciousness to the internet, ensuring his rule lasts forever.\"\n________________________________________________________________________________________________\n\"What does any of that have to do with Hitler?\" you question.\n\n\"The mad man is a descendant of a Jew who would have died in Auschwitz.\"\n________________________________________________________________________________________________\nHitler applauds and laughs.\n\n\"Truly, there has been no tale with a greater turn of events than this,\" he mocks, \"but it is time for this farce to end.\"\n\nHitler pulls a pistol from under his desk and opens fire.\n________________________________________________________________________________________________\nYour future self pushes you to the ground at the first gunshot.\n\nYou roll behind some furniture for cover as Hitler reloads.\n\nYou are safe but something is wrong.\n\nYou are alone.\n________________________________________________________________________________________________\nYour future self lies in a pool of blood, unmoving. Next to him is your pistol.\n\n\"Fuck.\"\n\nYou must have dropped it when you hit the floor.\n\nHitler notices you dropped your gun too. He shoots at it, breaking it into pieces.\n\nHe keeps you pinned behind the coffee table that protects you, laughing maniacally as he closes in.\n\nOnly one thing left to do now:\n\nCharge Hitler.\n________________________________________________________________________________________________\nYou wait for the reload and step out from behind cover to charge Hitler.\n\nAs you do, Hitler shoots you in the shoulder.\n\nYou fall backwards in pain as Hitler marches up to you and stomps on your wounded shoulder.\n\n\"Foolish Time Traveller! Can you not count bullets?\" He mocks you.\n\nGet him off.\n________________________________________________________________________________________________\nYou grab his foot and try to lift it off.\n\nPush.\n________________________________________________________________________________________________\n\"Goodbye, Time Traveller,\" Hitler takes aim.\n\nYou stare down the barrel of the gun.\n\nThis is it.\n\nHitler squeezes the trigger.\n________________________________________________________________________________________________\nYour future self tackles Hitler causing the bullet to narrowly miss you.\n\nThe future you wrestles the gun away from him and kicks it over to you.\n\nPick it up.\n________________________________________________________________________________________________\n\"NO!\" Hitler screams.\n\nAim.\n\nHitler struggles to break free.\n\nFire.",
         "rulesets":[{
           "id":145,
           "name":"WWII - 0-0",
@@ -3648,8 +4123,8 @@
         },{
           "id":190,
           "name":"WWII - 34-0",
-          "start":4026,
-          "end":4167,
+          "start":4067,
+          "end":4173,
           "rules":[{
             "id":337,
             "name":"WWII - 34-0",
@@ -3693,8 +4168,8 @@
         },{
           "id":191,
           "name":"WWII - 34-1 -> 35",
-          "start":4167,
-          "end":4179,
+          "start":4173,
+          "end":4185,
           "rules":[{
             "id":338,
             "name":"WWII - 34-1",
@@ -3769,8 +4244,8 @@
         },{
           "id":192,
           "name":"WWII - 35/36-0",
-          "start":4276,
-          "end":4299,
+          "start":4282,
+          "end":4305,
           "rules":[{
             "id":340,
             "name":"WWII - 35/36",
@@ -3834,8 +4309,8 @@
         },{
           "id":193,
           "name":"WWII - 35/36-1 -> 36",
-          "start":4299,
-          "end":4305,
+          "start":4305,
+          "end":4311,
           "rules":[{
             "id":341,
             "name":"WWII - 35/36-1",
@@ -3950,8 +4425,8 @@
         },{
           "id":194,
           "name":"WWII - 36-2",
-          "start":4305,
-          "end":4338,
+          "start":4311,
+          "end":4344,
           "rules":[{
             "id":343,
             "name":"WWII - 36-2",
@@ -3995,8 +4470,8 @@
         },{
           "id":195,
           "name":"WWII - 36-3 Conclude",
-          "start":4338,
-          "end":4343,
+          "start":4344,
+          "end":4349,
           "rules":[{
             "id":344,
             "name":"WWII - 36-3",
@@ -4052,171 +4527,14 @@
               }
             }]
           }]
-        }]
-      },
-      "isStart":false,
-      "rules":[]
-    },{
-      "id":13,
-      "name":"Conclusion",
-      "content":{
-        "text":"The gunshot echoes throughout the large enclosed room.\n\nHitler's body goes limp. Your future self gets up and walks over to you.\n\n\"Good job. History has been preserved. Your future will no longer be my present.\"\n\n\"But then how are you still here?\"\n\n\"There are infinite futures, I am from one of many. Stopping you was never going to change anything for me.\"\n\n\"Then why?\"\n\n\"Hope. To ensure that in these infinite timelines, there is hope.\"\n\nUsing their pocket watch, they open a portal.\n\n\"Come on, I'll drop you off on the way back.\"\n\n***The End***",
-        "rulesets":[{
-          "id":196,
-          "name":"Conclusion -> 1",
-          "start":130,
-          "end":213,
-          "rules":[{
-            "id":346,
-            "name":"0 -> 1",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":0
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateIntegerFacts",
-              "params":{
-                "updateValue":{
-                  "type":"union",
-                  "value":"inputValue"
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "inputValue":{
-                  "type":"integer",
-                  "value":1
-                }
-              }
-            },{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":13
-                }
-              }
-            }]
-          }]
         },{
-          "id":197,
-          "name":"Conclusion >0 -> 2",
-          "start":213,
-          "end":249,
+          "id":206,
+          "name":"WWII - 34-0",
+          "start":4026,
+          "end":4067,
           "rules":[{
-            "id":347,
-            "name":"Conclusion >0",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":1
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"<"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":348,
-            "name":"1 -> 2",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[]
-          }]
-        },{
-          "id":198,
-          "name":"Conclusion >1 -> 3",
-          "start":249,
-          "end":359,
-          "rules":[{
-            "id":349,
-            "name":"Conclusion >1",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":2
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"<"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":350,
-            "name":"2 -> 3",
+            "id":365,
+            "name":"WWII - 34-0",
             "stopIfTrue":false,
             "conditionsOp":"or",
             "conditions":[{
@@ -4224,240 +4542,11 @@
               "params":{
                 "input":{
                   "type":"integer",
-                  "value":2
+                  "value":34
                 },
                 "fact":{
                   "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateIntegerFacts",
-              "params":{
-                "updateValue":{
-                  "type":"union",
-                  "value":"inputValue"
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "inputValue":{
-                  "type":"integer",
-                  "value":3
-                }
-              }
-            },{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":13
-                }
-              }
-            }]
-          }]
-        },{
-          "id":199,
-          "name":"Conclusion >2 -> 4",
-          "start":359,
-          "end":372,
-          "rules":[{
-            "id":351,
-            "name":"Conclusion >2",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":3
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"<"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":352,
-            "name":"3 -> 4",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":3
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"="
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateIntegerFacts",
-              "params":{
-                "updateValue":{
-                  "type":"union",
-                  "value":"inputValue"
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "inputValue":{
-                  "type":"integer",
-                  "value":4
-                }
-              }
-            },{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":13
-                }
-              }
-            }]
-          }]
-        },{
-          "id":200,
-          "name":"Conclusion >3 -> 5",
-          "start":372,
-          "end":440,
-          "rules":[{
-            "id":353,
-            "name":"Conclusion >3",
-            "stopIfTrue":true,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":3
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "comparisonValue":{
-                  "type":"union",
-                  "value":"input"
-                },
-                "operator":{
-                  "type":"selectedListValue",
-                  "value":"<"
-                }
-              }
-            }],
-            "actions":[{
-              "actionType":"UpdateText",
-              "params":{
-                "textInput":{
-                  "type":"string",
-                  "value":""
-                },
-                "text":{
-                  "type":"union",
-                  "value":"textInput"
-                }
-              }
-            }]
-          },{
-            "id":354,
-            "name":"4 -> 5",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[],
-            "actions":[{
-              "actionType":"UpdateIntegerFacts",
-              "params":{
-                "updateValue":{
-                  "type":"union",
-                  "value":"inputValue"
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
-                },
-                "inputValue":{
-                  "type":"integer",
-                  "value":5
-                }
-              }
-            },{
-              "actionType":"LinkTo",
-              "params":{
-                "node":{
-                  "type":"node",
-                  "value":13
-                }
-              }
-            }]
-          }]
-        },{
-          "id":201,
-          "name":"Conclusion 5",
-          "start":440,
-          "end":547,
-          "rules":[{
-            "id":355,
-            "name":"Conclusion 5",
-            "stopIfTrue":false,
-            "conditionsOp":"or",
-            "conditions":[{
-              "conditionType":"IntegerFactComparison",
-              "params":{
-                "input":{
-                  "type":"integer",
-                  "value":5
-                },
-                "fact":{
-                  "type":"integerFact",
-                  "value":16
+                  "value":15
                 },
                 "comparisonValue":{
                   "type":"union",
@@ -4491,7 +4580,7 @@
       "id":6,
       "name":"Inter-Dimensional Travel",
       "content":{
-        "text":"Any-and-All-Time\nAny-and-Every-Where\n\nYou are pulled into a dimension between time and space.\nFrom here, you can be anywhere and everywhere.\nAt any time and at all times.\n\nBut time travel has its limits, your pocket watch can only bring you so far.\nYou will only be able to travel forwards in time after the initial jump back.\nAnd you cannot travel to a timezone where you have been before.\n\nIt was wise of you to chart out all possible paths in case of any hiccups.\nYou've also accounted for your return trip to your own time less you are stranded when you do not belong.\n\nThe only thing that's left to do is to choose when you want to go:\nBirth of Baby Hitler\nHitler's Rejection from Arts School\n_____________________________________________________________________________________\nYou fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nWith the bleeding stopped, it is time to choose when you next want to go:\nHitler's Rejection from Arts School\nSparing of Hitler in World War I\n_____________________________________________________________________________________\nAGAIN!\nWhoever this nuisance was, this was the second time your plans have been disrupted!\nYou check your pocket watch, the battery life read 50%.\nGood.\nYou still have a chance.\n\nHaving left your pistol behind, you will need time to craft a new one.\nPulling out some materials and your multitool from your backpack you begin your work.\n_____________________________________________________________________________________\nFinally, you are done, the work is shoddy and rushed but it should get the job done.\nYou check your pocket watch again.\n30%.\n\nYou curse your luck.\nThe process took much longer than expected.\nBut that does not matter now.\nTime to pick when you next want to go:\n\nSparing of Hitler in World War I\nNazi Invasion of Poland\n_____________________________________________________________________________________\nYou check your pocket watch.\n10%.\n\nYou look at your temporal charts.\nYou search desperately for some route you may have missed but eventually accept it.\nYou have failed.\nThere is no way you can still accomplish your mission and return to your time.\n\nThis is your last choice:\nReturn home a failure OR make one last attempt to kill Hitler.",
+        "text":"Any-and-All-Time\nAny-and-Every-Where\n\nYou are pulled into a dimension between time and space.\nFrom here, you can be anywhere and everywhere.\nAt any time and at all times.\n\nBut time travel has its limits, your pocket watch can only bring you so far.\nYou will only be able to travel forwards in time after the initial jump back.\nAnd you cannot travel to a timezone where you have been before.\n\nIt was wise of you to chart out all possible paths in case of any hiccups.\nYou've also accounted for your return trip to your own time less you are stranded when you do not belong.\n\nThe only thing that's left to do is to choose when you want to go:\nBirth of Baby Hitler\nHitler's Rejection from Arts School\n_____________________________________________________________________________________\nYou fall through the portal, your wounds bleeding profusely.\nAt least here, you are safe.\nOpening your backpack, you remove the medkit within and clean your wounds.\n\nAs you bandage yourself, you can't help but wonder.\nWho was this mysterious person who attacked you?\nEverything was timed so perfectly.\nAnother time traveller?\n\nWhoever it was, you know they are on to you now.\nYou'll just have to adjust your plans.\n\nWith the bleeding stopped, it is time to choose when you next want to go:\nHitler's Rejection from Arts School\nSparing of Hitler in World War I\n_____________________________________________________________________________________\nAGAIN!\nWhoever this nuisance was, this was the second time your plans have been disrupted!\nYou check your pocket watch, the battery life read 50%.\nGood.\nYou still have a chance.\n\nHaving left your pistol behind, you will need time to craft a new one.\nPulling out some materials and your multitool from your backpack you begin your work.\n_____________________________________________________________________________________\nFinally, you are done, the gun is shoddy and rushed but it should get the job done.\nYou check your pocket watch again.\n30%.\n\nYou curse your luck.\nThe process took much longer than expected.\nBut that does not matter now.\nTime to pick when you next want to go:\n\nSparing of Hitler in World War I\nNazi Invasion of Poland\n_____________________________________________________________________________________\nYou check your pocket watch.\n10%.\n\nYou look at your temporal charts.\nYou search desperately for some route you may have missed but eventually accept it.\nYou have failed.\nThere is no way you can still accomplish your mission and return to your time.\n\nThis is your last choice:\nReturn home a failure OR make one last attempt to kill Hitler.",
         "rulesets":[{
           "id":1,
           "name":"IDT - 0",
@@ -4989,8 +5078,8 @@
         },{
           "id":108,
           "name":"IDT - 3-1 - WWI",
-          "start":2112,
-          "end":2145,
+          "start":2111,
+          "end":2144,
           "rules":[{
             "id":199,
             "name":"IDT - 3-1",
@@ -5080,8 +5169,8 @@
         },{
           "id":109,
           "name":"IDT - 3-2 - Poland",
-          "start":2145,
-          "end":2169,
+          "start":2144,
+          "end":2168,
           "rules":[{
             "id":201,
             "name":"IDT - 3-2",
@@ -5141,7 +5230,7 @@
           "id":110,
           "name":"IDT - 3-0",
           "start":1851,
-          "end":2112,
+          "end":2111,
           "rules":[{
             "id":203,
             "name":"IDT - 3-0",
@@ -5185,8 +5274,8 @@
         },{
           "id":141,
           "name":"IDT - 4-0",
-          "start":2255,
-          "end":2531,
+          "start":2254,
+          "end":2530,
           "rules":[{
             "id":253,
             "name":"IDT - 4-0",
@@ -5230,8 +5319,8 @@
         },{
           "id":142,
           "name":"IDT - 4-2",
-          "start":2552,
-          "end":2556,
+          "start":2551,
+          "end":2555,
           "rules":[{
             "id":254,
             "name":"IDT - 4-2",
@@ -5275,8 +5364,8 @@
         },{
           "id":143,
           "name":"IDT - 4-1 Return Home",
-          "start":2531,
-          "end":2552,
+          "start":2530,
+          "end":2551,
           "rules":[{
             "id":255,
             "name":"IDT - 4-1",
@@ -5335,8 +5424,8 @@
         },{
           "id":144,
           "name":"IDT - 4-3 Last Attempt",
-          "start":2556,
-          "end":2593,
+          "start":2555,
+          "end":2592,
           "rules":[{
             "id":257,
             "name":"IDT - 4-3",
@@ -15394,9 +15483,25 @@
     "Default Story Viewer":{
       "zoomLevel":0.8,
       "nodes":[{
+        "id":13,
+        "x":1712.499999999999,
+        "y":306.24999999999983
+      },{
         "id":5,
         "x":1706.2499999999995,
         "y":61.24999999999997
+      },{
+        "id":6,
+        "x":109.99999999999994,
+        "y":308.74999999999983
+      },{
+        "id":11,
+        "x":1109.9999999999995,
+        "y":541.2499999999998
+      },{
+        "id":10,
+        "x":811.2499999999998,
+        "y":536.2499999999998
       },{
         "id":7,
         "x":813.7499999999998,
@@ -15410,21 +15515,9 @@
         "x":1103.7499999999995,
         "y":304.99999999999983
       },{
-        "id":6,
-        "x":109.99999999999994,
-        "y":308.74999999999983
-      },{
-        "id":13,
-        "x":1713.749999999999,
-        "y":309.99999999999983
-      },{
         "id":4,
         "x":1461.9999999999995,
         "y":65.50000000000001
-      },{
-        "id":11,
-        "x":1109.9999999999995,
-        "y":541.2499999999998
       },{
         "id":3,
         "x":1219.9999999999993,
@@ -15445,10 +15538,6 @@
         "id":0,
         "x":113.74999999999994,
         "y":626.2499999999997
-      },{
-        "id":10,
-        "x":811.2499999999998,
-        "y":536.2499999999998
       },{
         "id":1,
         "x":668.9999999999999,
