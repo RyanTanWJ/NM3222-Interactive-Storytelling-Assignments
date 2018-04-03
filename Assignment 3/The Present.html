@@ -20,16 +20,22 @@ NAME Beginning
 255,255,0
 
 PAL 1
-NAME History
+NAME History 0
 0,0,0
 255,255,255
 255,255,255
 
 PAL 2
-NAME Future
+NAME Future 0
 221,221,221
 0,221,221
 240,240,0
+
+PAL 3
+NAME Now 0
+255,255,255
+255,255,255
+255,255,255
 
 ROOM 0
 a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
@@ -49,8 +55,8 @@ a,a,a,a,a,a,a,0,0,a,a,a,a,a,a,a
 a,a,a,a,a,a,a,0,0,a,a,a,a,a,a,a
 a,a,a,a,a,a,a,0,0,a,a,a,a,a,a,a
 NAME Beginning
-EXT 0,7 1 6,6
-EXT 0,8 1 6,6
+EXT 0,7 1 4,10
+EXT 0,8 1 4,10
 EXT 15,7 2 1,12
 EXT 15,8 2 1,12
 EXT 7,15 3 6,6
@@ -58,24 +64,24 @@ EXT 8,15 3 6,6
 PAL 0
 
 ROOM 1
+b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0b,
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b,b
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
+b,b,b,0,0,b,b,b,b,b,b,b,b,b,b,b
+b,b,b,0,0,b,b,b,b,b,b,b,b,b,b,b
 NAME Past Start
-PAL 0
+PAL 1
 
 ROOM 2
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
@@ -96,13 +102,13 @@ b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 NAME Future Start
 ITM 0 6,3
-ITM 0 7,3
 ITM 0 8,3
-ITM 0 9,3
 ITM 0 10,3
 ITM 1 8,1
 ITM 2 8,12
 ITM 2 13,8
+ITM 0 8,11
+ITM 0 13,7
 EXT 15,3 0 7,5
 EXT 15,4 0 0,0
 PAL 2
@@ -157,7 +163,7 @@ TIL b
 11111111
 11111111
 11111111
-NAME wall
+NAME Wall
 
 SPR A
 00011000
@@ -219,11 +225,11 @@ DLG SPR_1
 POS 0 12,6
 
 SPR f
-00111100
-00111100
-00111100
-00111100
-00111100
+00000000
+00000000
+00000000
+11111111
+11111111
 00111100
 00111100
 00111100
@@ -232,7 +238,7 @@ POS 2 2,12
 
 SPR g
 00000000
-00011000
+00000000
 00011000
 00011000
 00111100
@@ -283,15 +289,15 @@ DLG SPR_7
 POS 2 4,8
 
 SPR k
+00000000
+00000000
+00000000
+11111111
+11111111
 00111100
 00111100
 00111100
-00111100
-00111100
-00111100
-00111100
-00111100
-NAME Vert Table2
+NAME Table
 POS 2 5,8
 
 SPR l
@@ -306,6 +312,43 @@ SPR l
 NAME Girl 2
 DLG SPR_6
 POS 2 6,8
+
+SPR m
+00000000
+00000000
+00000000
+11111111
+11111111
+01000000
+01000000
+01000000
+NAME School Table Left
+POS 1 4,9
+
+SPR n
+00000000
+00000000
+00000000
+11111111
+11111111
+00000010
+00000010
+00000010
+NAME School Table Right
+POS 1 5,9
+
+SPR o
+00000000
+00111100
+01011010
+00011000
+01111110
+00011000
+00111100
+00100100
+NAME C History 0
+DLG SPR_8
+POS 1 5,10
 
 ITM 0
 00011000
@@ -332,14 +375,14 @@ NAME Calefare
 DLG ITM_1
 
 ITM 2
-00111100
-00111100
-00111100
-00111100
-00111100
-00111100
-00111100
-00111100
+00000000
+00000000
+00000000
+11111111
+11111111
+01000010
+01000010
+01000010
 NAME Knockable Table
 DLG ITM_2
 
@@ -361,13 +404,13 @@ A: {
   - {item "Booze"} == 0 ?
     R, let's grab a drink, just don't over do it.
   - {item "0"} == 1 ?
-    Are you drunk already?
+    Feeling better man? So what happened with C?
   - {item "Booze"} == 2 ?
-    R, slow down. Have some warm water.
+    Shit. That's fucked up man. Why don't you grab another drink?
   - {item "Booze"} == 3 ?
-    Just please don't go over and talk to those girls.
+    R, slow down. Have some warm water.
   - {item "Booze"} == 4 ?
-    You're becoming a bigger problem than B, at least he's just sitting there.
+    Just please don't go over and talk to those girls.
   - {item "Booze"} == 5 ?
     THAT'S ENOUGH! I'M TAKING YOU AND B HOME RIGHT NOW!
 }
@@ -390,6 +433,16 @@ Oh, no, sorry. I have a boyfriend
 
 DLG ITM_2
 You knocked over a table.
+
+DLG SPR_8
+"""
+C: {cycle
+  - Oh hey, aren't you that guy from ABC1234?
+  - What are you doing here in this faculty?
+  - No way! I've been thinking about transferring!
+  - My name is C! Nice to meet you!
+}
+"""
 
 VAR a
 42
