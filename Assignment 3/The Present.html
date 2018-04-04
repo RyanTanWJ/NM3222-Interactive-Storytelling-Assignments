@@ -21,14 +21,14 @@ NAME Beginning
 
 PAL 1
 NAME History 0
-0,0,0
-255,255,255
-255,255,255
+68,68,68
+187,187,187
+136,136,136
 
 PAL 2
 NAME Future 0
 221,221,221
-0,221,221
+0,208,208
 240,240,0
 
 PAL 3
@@ -36,6 +36,12 @@ NAME Now 0
 255,255,255
 255,255,255
 255,255,255
+
+PAL 4
+NAME Development
+0,0,0
+65,72,255
+255,17,4
 
 ROOM 0
 a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
@@ -66,17 +72,17 @@ PAL 0
 ROOM 1
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,b,0,0,d,d,d,d,0,0,0,d,d,0,b,b
+0,0,0,0,c,c,c,c,0,0,0,c,c,0,0,0
+0,0,0,0,d,d,d,d,0,0,0,d,d,0,0,0
 b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0b,
+b,b,0,0,d,d,0,0,d,d,0,d,d,0,b,b
+b,b,0,0,c,c,0,0,c,c,b,c,c,0,b,b
+b,b,0,0,d,d,0,0,d,d,0,d,d,0,b,b
+b,b,0,0,c,c,0,0,0,0,0,0,0,0,b,b
 b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b,b
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-b,b,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+b,b,0,0,c,c,0,0,0,0,0,0,0,0,0,0
+b,b,0,0,d,d,0,0,0,0,0,0,0,0,0,0
 b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
 b,b,b,0,0,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,0,0,b,b,b,b,b,b,b,b,b,b,b
@@ -85,32 +91,29 @@ PAL 1
 
 ROOM 2
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,0,0,0,0,b,0,0,0,0,0,b,0,0,0,b
+b,0,0,0,0,b,0,0,d,0,0,b,0,0,0,b
 b,0,0,0,0,b,b,b,b,b,b,b,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
+b,0,0,0,0,c,0,0,0,0,0,0,c,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
-b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
-b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
+b,0,c,0,0,0,0,0,c,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 NAME Future Start
-ITM 0 6,3
 ITM 0 8,3
-ITM 0 10,3
-ITM 1 8,1
-ITM 2 8,12
-ITM 2 13,8
 ITM 0 8,11
-ITM 0 13,7
-EXT 15,3 0 7,5
-EXT 15,4 0 0,0
+ITM 0 3,1
+ITM 0 5,7
+ITM 0 12,7
+EXT 15,3 0 7,7
+EXT 15,4 0 7,7
 PAL 2
 
 ROOM 3
@@ -131,7 +134,27 @@ ROOM 3
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Now Start
-PAL 0
+PAL 3
+
+ROOM 4
+b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,0,e,j,j,j,j,j,j,j,j,j,k,0,b
+b,0,0,f,0,0,o,q,0,s,u,0,0,l,0,b
+b,0,0,0,g,0,p,r,0,t,v,0,m,0,0,b
+b,0,0,0,f,0,0,0,0,0,0,0,l,0,0,b
+b,0,0,0,0,h,i,i,i,i,i,n,0,0,0,b
+b,x,x,x,x,x,x,x,x,x,x,x,x,x,x,b
+b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
+b,0,w,w,w,w,w,0,0,w,w,w,w,w,0,b
+b,0,w,w,w,w,w,0,0,w,w,w,w,w,0,b
+b,0,w,w,w,w,w,0,0,w,w,w,w,w,0,b
+b,0,w,w,w,w,w,0,0,w,w,w,w,w,0,b
+b,0,w,w,w,w,w,0,0,w,w,w,w,w,0,b
+b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
+b,b,b,b,b,b,b,0,0,b,b,b,b,b,b,b
+b,b,b,b,b,b,b,0,0,b,b,b,b,b,b,b
+NAME History 1 - Development
+PAL 4
 
 TIL a
 01010101
@@ -152,7 +175,7 @@ TIL a
 10101010
 01010101
 NAME shifting wall
-WAL false
+WAL true
 
 TIL b
 11111111
@@ -164,6 +187,253 @@ TIL b
 11111111
 11111111
 NAME Wall
+WAL true
+
+TIL c
+00000000
+00000000
+00000000
+11111111
+11111111
+01000010
+01000010
+01000010
+NAME Table
+WAL true
+
+TIL d
+00011000
+00111100
+00111100
+00011000
+00111100
+01011010
+00011000
+00100100
+NAME Calefare
+WAL true
+
+TIL e
+11111111
+10000000
+01000000
+01000000
+00100000
+00100000
+00010000
+00010000
+NAME Cinema Screen Top
+
+TIL f
+00001000
+00001000
+00000100
+00000100
+00000010
+00000010
+00000001
+00000001
+NAME Cinema Screen Left
+
+TIL g
+10000000
+10000000
+01000000
+01000000
+00100000
+00100000
+00010000
+00010000
+NAME Cinema Screen Left 2
+
+TIL h
+10000000
+10000000
+01000000
+01000000
+00100000
+00100000
+00010000
+00011111
+NAME Cinema Left Bottom
+
+TIL i
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+NAME Cinema Screen Bottom
+WAL true
+
+TIL j
+11111111
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Cinema Screen Top
+
+TIL k
+11111111
+00000001
+00000010
+00000010
+00000100
+00000100
+00001000
+00001000
+NAME Cinema Screen Top Right
+
+TIL l
+00010000
+00010000
+00100000
+00100000
+01000000
+01000000
+10000000
+10000000
+NAME Cinema Screen Right
+
+TIL m
+00000001
+00000001
+00000010
+00000010
+00000100
+00000100
+00001000
+00001000
+NAME Cinema Screen Right 2
+
+TIL n
+00000001
+00000001
+00000010
+00000010
+00000100
+00000100
+00001000
+11111000
+NAME Cinema Screen Right Bottom
+
+TIL o
+11111111
+11111111
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+NAME D00
+
+TIL p
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+11111111
+11111111
+NAME D10
+
+TIL q
+11110000
+11111000
+00011100
+00001100
+00000110
+00000110
+00000011
+00000011
+NAME D01
+
+TIL r
+00000011
+00000011
+00000110
+00000110
+00001100
+00011100
+11111000
+11110000
+NAME D11
+
+TIL s
+11111111
+11111111
+11000000
+11000000
+11000000
+11000000
+11000000
+11111111
+NAME P00
+
+TIL t
+11111111
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+NAME P10
+
+TIL u
+11110000
+11110000
+00011000
+00011000
+00011000
+00011000
+00011000
+11110000
+NAME P01
+
+TIL v
+11110000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME P11
+
+TIL w
+00000000
+00000000
+00000000
+00111100
+01111110
+00111100
+00100100
+01000010
+NAME Chair
+
+TIL x
+00000000
+00000000
+00000000
+11111111
+11111111
+00011000
+00011000
+00011000
+NAME Barrier
+WAL true
 
 SPR A
 00011000
@@ -224,18 +494,6 @@ NAME Future Sign
 DLG SPR_1
 POS 0 12,6
 
-SPR f
-00000000
-00000000
-00000000
-11111111
-11111111
-00111100
-00111100
-00111100
-NAME Vert Table Middle
-POS 2 2,12
-
 SPR g
 00000000
 00000000
@@ -260,7 +518,7 @@ SPR h
 00100100
 NAME B
 DLG SPR_4
-POS 2 3,1
+POS 2 2,1
 
 SPR i
 00110000
@@ -273,7 +531,7 @@ SPR i
 00111100
 NAME Puke
 DLG SPR_5
-POS 2 3,2
+POS 2 2,2
 
 SPR j
 00111100
@@ -288,18 +546,6 @@ NAME Girl
 DLG SPR_7
 POS 2 4,8
 
-SPR k
-00000000
-00000000
-00000000
-11111111
-11111111
-00111100
-00111100
-00111100
-NAME Table
-POS 2 5,8
-
 SPR l
 00111100
 00111100
@@ -312,30 +558,6 @@ SPR l
 NAME Girl 2
 DLG SPR_6
 POS 2 6,8
-
-SPR m
-00000000
-00000000
-00000000
-11111111
-11111111
-01000000
-01000000
-01000000
-NAME School Table Left
-POS 1 4,9
-
-SPR n
-00000000
-00000000
-00000000
-11111111
-11111111
-00000010
-00000010
-00000010
-NAME School Table Right
-POS 1 5,9
 
 SPR o
 00000000
@@ -350,6 +572,18 @@ NAME C History 0
 DLG SPR_8
 POS 1 5,10
 
+SPR p
+00000000
+00111100
+01011010
+00011000
+01111110
+00011000
+00111100
+00100100
+NAME Development C
+POS 4 11,10
+
 ITM 0
 00011000
 00011000
@@ -362,30 +596,6 @@ ITM 0
 NAME Booze
 DLG ITM_0
 
-ITM 1
-00011000
-00111100
-00111100
-00011000
-00111100
-01011010
-00011000
-00100100
-NAME Calefare
-DLG ITM_1
-
-ITM 2
-00000000
-00000000
-00000000
-11111111
-11111111
-01000010
-01000010
-01000010
-NAME Knockable Table
-DLG ITM_2
-
 DLG SPR_1
 "Tomorrow is a mystery."
 
@@ -395,9 +605,6 @@ DLG SPR_2
 DLG SPR_0
 "Today is a gift. That is why it is called The Present."
 
-DLG ITM_0
-{wvy}Maybe you shouldn't drink so much...{wvy}
-
 DLG SPR_3
 """
 A: {
@@ -406,9 +613,9 @@ A: {
   - {item "0"} == 1 ?
     Feeling better man? So what happened with C?
   - {item "Booze"} == 2 ?
-    Shit. That's fucked up man. Why don't you grab another drink?
+    Shit. At least it's over now. Want another drink?
   - {item "Booze"} == 3 ?
-    R, slow down. Have some warm water.
+    R, are you drunk already? Slow down. Have some warm water.
   - {item "Booze"} == 4 ?
     Just please don't go over and talk to those girls.
   - {item "Booze"} == 5 ?
@@ -419,28 +626,52 @@ A: {
 DLG SPR_4
 B: {shk}I don't feel so good{shk}
 
-DLG ITM_1
-If you see this, it's a bug.
-
 DLG SPR_5
 Probably best to not step in B's {rbw}vomit{rbw}.
 
 DLG SPR_6
-Go out with you? HAHAHAHAHAHA!
+"""
+{
+  - {item "Booze"} == 5 ?
+    Girl: Go out with you? HAHAHAHAHAHA!
+  - else ?
+    R is too shy to talk to her.
+}
+"""
 
 DLG SPR_7
-Oh, no, sorry. I have a boyfriend
-
-DLG ITM_2
-You knocked over a table.
+"""
+{
+  - {item "Booze"} == 5 ?
+    Girl: Oh, no, sorry. I have a boyfriend.
+  - else ?
+    R is too shy to talk to her.
+}
+"""
 
 DLG SPR_8
 """
-C: {cycle
+C: {sequence
   - Oh hey, aren't you that guy from ABC1234?
   - What are you doing here in this faculty?
   - No way! I've been thinking about transferring!
   - My name is C! Nice to meet you!
+}
+"""
+
+DLG ITM_0
+"""
+{
+  - {item "0"} == 1 ?
+    R found some alcohol!
+  - {item "Booze"} == 2 ?
+    R's lips are loosening.
+  - {item "Booze"} == 3 ?
+    R: WUBBA LUBBA DUB DUB!!
+  - {item "Booze"} == 4 ?
+    R is babbling randomly.
+  - {item "Booze"} == 5 ?
+    R has drunk {wvy}waaaaaayyyyy{wvy} too much.
 }
 """
 
