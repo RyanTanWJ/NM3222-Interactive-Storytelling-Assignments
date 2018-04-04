@@ -162,6 +162,8 @@ b,0,0,0,0,0,0,0,0,0,0,0,0,0,0,b
 b,b,b,b,b,b,b,0,0,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,0,0,b,b,b,b,b,b,b
 NAME History 1 - Development
+EXT 7,15 5 3,13
+EXT 8,15 5 3,13
 PAL 4
 
 ROOM 5
@@ -172,10 +174,10 @@ a,14,14,14,14,14,14,a,a,a,0,18,19,a,a,a
 a,0,16,17,0,16,17,a,a,a,0,0,0,a,a,a
 a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
 a,13,13,13,13,13,13,a,a,a,a,a,a,a,a,a
-a,b,b,b,b,12,b,a,a,a,a,a,a,a,a,a
+a,b,1a,1a,b,12,b,a,a,a,a,a,a,a,a,a
 a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
-a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
-a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
+a,0,1b,1c,0,0,0,a,a,a,a,a,a,a,a,a
+a,0,1d,1e,0,0,0,a,a,a,a,a,a,a,a,a
 a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
 a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
 a,0,0,0,0,0,0,a,a,a,a,a,a,a,a,a
@@ -215,7 +217,7 @@ TIL 12
 10100101
 11111111
 10100101
-NAME Gate
+NAME Side Gate
 WAL true
 
 TIL 13
@@ -271,6 +273,7 @@ TIL 17
 00000000
 00000000
 00000000
+NAME Road 3
 
 TIL 18
 00000000
@@ -551,6 +554,62 @@ TIL z
 11000011
 NAME iMax
 
+TIL 1a
+11111111
+00000000
+11111111
+00000000
+11111111
+00000000
+11111111
+00000000
+NAME Gate
+WAL true
+
+TIL 1b
+00000000
+00000000
+00001111
+00010111
+00101111
+00111111
+00111000
+00111000
+NAME Car Top Left
+
+TIL 1c
+00000000
+00000000
+11110000
+11101000
+11110100
+11111100
+00011100
+00011100
+NAME Car Top Right
+
+TIL 1d
+00111111
+00111111
+00111111
+00111000
+00101000
+00010111
+00001111
+00000000
+NAME Car Bottom Left
+
+TIL 1e
+11111100
+11111100
+11111100
+00011100
+00010100
+11101000
+11110000
+00000000
+NAME Car Bottom Right
+
 SPR A
 00011000
 00011000
@@ -711,6 +770,7 @@ SPR q
 00111100
 00111100
 NAME Crisis Phone
+DLG SPR_a
 POS 5 4,13
 
 ITM 0
@@ -817,11 +877,23 @@ DLG SPR_9
     R: (Y)
   - C: HAHAHAHA! You're so funny, R!
   - C: Are you a romantic, R? Really? Me too!
-
   - C: Do you have a type? Oooooh.
   - C: Me? I like a guy who makes me a better person.
   - C: Look at those couples, R. {wvy}Holding hands being mushy~{wvy}
   - C: Movie's over, let's go.
+}
+"""
+
+DLG SPR_a
+"""
+C: {sequence
+  - R, can I tell you something?
+  - But you have to promise me something first!
+  - Promise you won't get upset or judge me
+  - Okay, so...
+  - I had a one night stand.
+  - 
+  - 
 }
 """
 
