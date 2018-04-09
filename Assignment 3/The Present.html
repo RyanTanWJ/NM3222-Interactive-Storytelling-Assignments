@@ -1409,10 +1409,14 @@ A: {
 """
 
 DLG SPR_4
-B: {shk}I don't feel so good{shk}
-
-DLG SPR_5
-Probably best to not step in B's {rbw}vomit{rbw}.
+"""
+B: {
+  - {item "Vomit"} == 1 ?
+    {wvy}Sorry about your shoe.{wvy}
+  - else ?
+    {shk}I don't feel so good.{shk}
+}
+"""
 
 DLG SPR_6
 """
