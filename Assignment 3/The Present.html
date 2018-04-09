@@ -268,7 +268,7 @@ PAL 6
 ROOM 8
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
@@ -283,6 +283,10 @@ b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 NAME Future 1 - Disco
+ITM 3 3,9
+ITM 3 8,9
+ITM 3 7,7
+EXT 1,8 0 0,0
 PAL 2
 
 TIL 10
@@ -1124,18 +1128,20 @@ SPR w
 00111100
 01011010
 01011010
-00011000
+00111100
 00111100
 01011010
 00011000
 00100100
 NAME Future Girl 1
+DLG SPR_h
+POS 8 5,9
 
 SPR x
 00111100
 01011010
 01011010
-00011000
+00111100
 00111100
 01011010
 00011000
@@ -1150,6 +1156,15 @@ SPR y
 01011010
 00111100
 00011000
+00011000
+00100100
+01000010
+>
+00011000
+00011000
+00011000
+00111100
+01011010
 00011000
 00100100
 01000010
@@ -1178,6 +1193,15 @@ ITM 1
 01001010
 01000010
 01111110
+>
+00000000
+01000010
+01111110
+01001010
+01000010
+01010010
+01000010
+01111110
 NAME Whiskey
 DLG ITM_1
 
@@ -1192,6 +1216,27 @@ ITM 2
 00111100
 NAME Beer
 DLG ITM_2
+
+ITM 3
+00000000
+01000010
+01111110
+01001010
+01000010
+01010010
+01000010
+01111110
+>
+00000000
+01000010
+01111110
+01010010
+01000010
+01001010
+01000010
+01111110
+NAME Cheap Beer
+DLG ITM_3
 
 DLG SPR_1
 "Tomorrow is a mystery."
@@ -1415,17 +1460,35 @@ DLG SPR_e
 """
 
 DLG SPR_f
-Boy, you so naughty.
+Girl: Boy, you so naughty.
 
 DLG SPR_g
 """
-{shuffle
+L: {shuffle
   - Woohoo!
   - R, feeling better yet?
   - See R? C ain't worth your time!
-  - You can get action like this any time!
+  - You can have anything as long as you have money!
+  - R! Sing with me!
 }
 """
+
+DLG SPR_h
+"""
+{
+  - {item "Cheap Beer"} == 1 ?
+    Girl: Mmm... You're such a naughty boy.
+  - {item "Cheap Beer"} == 2 ?
+    Girl: How does that taste? Do you like that?
+  - {item "Cheap Beer"} == 3 ?
+    Girl: How about we go to the hotel?
+  - else ?
+    Girl: Come on, boy. You can touch me wherever you want.
+}
+"""
+
+DLG ITM_3
+R downed a glass of cheap beer.
 
 VAR H4
 0
