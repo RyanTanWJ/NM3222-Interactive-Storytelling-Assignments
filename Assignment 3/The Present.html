@@ -81,8 +81,8 @@ a,a,a,a,a,a,a,0,0,a,a,a,a,a,a,a
 NAME Beginning
 EXT 0,7 1 4,10
 EXT 0,8 1 4,10
-EXT 15,7 2 1,12
-EXT 15,8 2 1,12
+EXT 15,7 a 6,8
+EXT 15,8 a 6,8
 EXT 7,15 3 6,6
 EXT 8,15 3 6,6
 PAL 0
@@ -287,7 +287,7 @@ NAME Future 1 - Disco
 ITM 3 3,9
 ITM 3 8,9
 ITM 3 7,7
-EXT 1,8 0 0,0
+EXT 1,8 2 1,12
 PAL 2
 
 ROOM 9
@@ -308,8 +308,8 @@ b,b,0,0,0,0,0,0,0,0,0,0,0,0,b,b
 b,b,b,b,b,b,b,0,0,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,0,0,b,b,b,b,b,b,b
 NAME Future 2 - Mantle
-EXT 7,15 0 0,0
-EXT 8,15 0 0,0
+EXT 7,15 8 4,9
+EXT 8,15 8 4,9
 PAL 2
 
 ROOM a
@@ -321,8 +321,8 @@ b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,b,b,0,0,1t,0,0,w,1t,w,0,0,b,b,b
-b,b,b,0,0,1u,0,0,w,1u,w,0,0,b,b,b
+b,b,b,0,w,1t,w,0,w,1t,w,0,0,b,b,b
+b,b,b,0,w,1u,w,0,w,1u,w,0,0,b,b,b
 b,b,b,0,0,0,0,0,0,0,0,0,0,b,b,b
 b,b,b,0,0,0,0,0,0,0,0,0,0,b,b,b
 b,b,b,0,w,1t,w,0,w,1t,w,0,0,b,b,b
@@ -332,7 +332,7 @@ b,b,b,b,b,b,b,b,b,b,b,0,b,b,b,b
 NAME Future 3 - Work
 ITM 5 3,13
 ITM 5 12,8
-EXT 11,15 0 0,0
+EXT 11,15 9 7,9
 PAL 2
 
 TIL 10
@@ -981,7 +981,7 @@ SPR 10
 00100100
 NAME Voter 1
 DLG SPR_j
-POS 9 8,12
+POS 9 7,12
 
 SPR 11
 00111100
@@ -994,7 +994,7 @@ SPR 11
 00100100
 NAME Voter 2
 DLG SPR_k
-POS 9 7,12
+POS 9 8,12
 
 SPR 12
 00111100
@@ -1116,6 +1116,7 @@ SPR j
 00100100
 NAME Girl
 DLG SPR_7
+POS 2 4,8
 
 SPR l
 00111100
@@ -1128,6 +1129,7 @@ SPR l
 00100100
 NAME Girl 2
 DLG SPR_6
+POS 2 6,8
 
 SPR o
 00000000
@@ -1138,8 +1140,9 @@ SPR o
 00011000
 00111100
 00100100
-NAME C History 0
+NAME C Meeting
 DLG SPR_8
+POS 1 5,10
 
 SPR p
 00000000
@@ -1152,6 +1155,7 @@ SPR p
 00100100
 NAME Development C
 DLG SPR_9
+POS 4 11,9
 
 SPR q
 00000100
@@ -1164,6 +1168,7 @@ SPR q
 00111100
 NAME Crisis Phone
 DLG SPR_a
+POS 5 4,13
 
 SPR r
 00000000
@@ -1176,6 +1181,7 @@ SPR r
 00000000
 NAME Christmas C
 DLG SPR_b
+POS 6 7,2
 
 SPR s
 00000000
@@ -1188,6 +1194,7 @@ SPR s
 00100100
 NAME Restaurant C
 DLG SPR_d
+POS 7 13,2
 
 SPR t
 00011000
@@ -1200,6 +1207,7 @@ SPR t
 00100100
 NAME X
 DLG SPR_c
+POS 6 10,5
 
 SPR u
 00001000
@@ -1221,6 +1229,7 @@ SPR u
 00100100
 NAME R?
 DLG SPR_e
+POS 6 4,3
 
 SPR w
 00111100
@@ -1233,6 +1242,7 @@ SPR w
 00100100
 NAME Future Girl 1
 DLG SPR_h
+POS 8 5,9
 
 SPR x
 00111100
@@ -1245,6 +1255,7 @@ SPR x
 00100100
 NAME Future Girl 2
 DLG SPR_f
+POS 8 7,9
 
 SPR y
 00011000
@@ -1266,6 +1277,7 @@ SPR y
 01000010
 NAME L
 DLG SPR_g
+POS 8 6,9
 
 SPR z
 00001000
@@ -1287,6 +1299,7 @@ SPR z
 00100100
 NAME Pres R?
 DLG SPR_i
+POS 9 8,9
 
 ITM 0
 00011000
@@ -1418,7 +1431,7 @@ B: {
 DLG SPR_6
 """
 {
-  - {item "Booze"} == 5 ?
+  - {item "Booze"} == 4 ?
     Girl: Go out with you? HAHAHAHAHAHA!
   - else ?
     R is too shy to talk to her.
@@ -1428,7 +1441,7 @@ DLG SPR_6
 DLG SPR_7
 """
 {
-  - {item "Booze"} == 5 ?
+  - {item "Booze"} == 4 ?
     Girl: Oh, no, sorry. I have a boyfriend.
   - else ?
     R is too shy to talk to her.
@@ -1560,7 +1573,7 @@ DLG SPR_c
     X: Dude, you couldn't take me in a fight. You should go home.
     L: I called you a cab.
     
-    L: You can leave through the side gate.
+    L: You can leave through the side gate next to me.
   - else ?
     X: You want a cig?
 }
