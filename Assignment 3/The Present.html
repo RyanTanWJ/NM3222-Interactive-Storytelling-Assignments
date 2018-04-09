@@ -33,9 +33,9 @@ NAME Future 0
 
 PAL 3
 NAME Now 0
+0,0,0
 255,255,255
-255,255,255
-255,255,255
+255,255,0
 
 PAL 4
 NAME History 1
@@ -264,6 +264,26 @@ EXT 11,10 6 6,2
 EXT 12,10 6 6,2
 EXT 13,10 6 6,2
 PAL 6
+
+ROOM 8
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,0,0,1r,1s,0,0,b,b,b,b,b,b,b
+b,0,b,0,0,c,c,0,0,b,b,b,b,b,b,b
+b,0,0,0,0,0,0,0,0,b,b,b,b,b,b,b
+b,0,b,0,0,0,0,0,0,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+b,0,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+NAME Future 1 - Disco
+PAL 2
 
 TIL 10
 00011000
@@ -834,6 +854,48 @@ TIL 1q
 NAME Pool Bottom Right
 WAL true
 
+TIL 1r
+00000100
+00000010
+00111111
+00110000
+00110011
+00110100
+00110000
+00111111
+>
+00000100
+00000010
+00111111
+00110000
+00110100
+00110011
+00110000
+00111111
+NAME TV Left
+WAL true
+
+TIL 1s
+00100000
+01000000
+11111100
+00001100
+00101100
+11001100
+00001100
+11111100
+>
+00100000
+01000000
+11111100
+00001100
+11001100
+00101100
+00001100
+11111100
+NAME TV Right
+WAL true
+
 SPR A
 00011000
 00011000
@@ -1032,7 +1094,7 @@ SPR t
 10011001
 00100100
 00100100
-NAME L
+NAME X
 DLG SPR_c
 POS 6 9,4
 
@@ -1057,6 +1119,43 @@ SPR u
 NAME R?
 DLG SPR_e
 POS 6 4,3
+
+SPR w
+00111100
+01011010
+01011010
+00011000
+00111100
+01011010
+00011000
+00100100
+NAME Future Girl 1
+
+SPR x
+00111100
+01011010
+01011010
+00011000
+00111100
+01011010
+00011000
+00100100
+NAME Future Girl 2
+DLG SPR_f
+POS 8 7,9
+
+SPR y
+00011000
+00011000
+01011010
+00111100
+00011000
+00011000
+00100100
+01000010
+NAME L
+DLG SPR_g
+POS 8 6,9
 
 ITM 0
 00011000
@@ -1237,9 +1336,9 @@ DLG SPR_b
   - H42 == 1 ?
     C: R, you just want to get in my pants.{H4 = 1}
   - H42 == 2 ?
-    C: You know L?{H4 = 2}
+    C: You know X?{H4 = 2}
   - H42 == 3 ?
-    C: L and I are more than friends.{H4 = 3}
+    C: X and I are more than friends.{H4 = 3}
   - H42 == 4 ?
     C: Like... Friends++.{H4 = 4}
   - H42 == 5 ?
@@ -1265,16 +1364,16 @@ DLG SPR_c
 """
 {
   - {item "Whiskey"} == 1 ?
-    L: Hey man, are you drunk already?
+    X: Hey man, are you drunk already?
   - {item "Whiskey"} == 2 ?
-    L: What? Why do you want to die?
+    X: What? Why do you want to die?
   - {item "Whiskey"} == 3 ?
-    L: Dude, you couldn't take me in a fight. You should go home.
+    X: Dude, you couldn't take me in a fight. You should go home.
     L: I called you a cab.
     
     L: You can leave through the side gate.
   - else ?
-    L: You want a cig?
+    X: You want a cig?
 }
 """
 
@@ -1299,9 +1398,9 @@ DLG SPR_e
 """
 {
   - H4 == 1 ?
-    R: That's partially true, but I care about you, C.{H42 = 2}
+    R: That's only partially true... I care about you, C!{H42 = 2}
   - H4 == 2 ?
-    R: Who is L? You've never mentioned him before.{H42 = 3}
+    R: Who is X? You've never mentioned him before.{H42 = 3}
   - H4 == 3 ?
     R: More than friends? What does that mean?{H42 = 4}
   - H4 == 4 ?
@@ -1312,6 +1411,19 @@ DLG SPR_e
   - H4 == 0 ?
     R: You called me... You said you didn't want to be alone...
     R: Who is he?{H42 = 1}
+}
+"""
+
+DLG SPR_f
+Boy, you so naughty.
+
+DLG SPR_g
+"""
+{shuffle
+  - Woohoo!
+  - R, feeling better yet?
+  - See R? C ain't worth your time!
+  - You can get action like this any time!
 }
 """
 
