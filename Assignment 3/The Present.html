@@ -83,8 +83,8 @@ EXT 0,7 1 4,10
 EXT 0,8 1 4,10
 EXT 15,7 b 8,7
 EXT 15,8 b 8,7
-EXT 7,15 3 6,6
-EXT 8,15 3 6,6
+EXT 7,15 c 8,6
+EXT 8,15 c 8,6
 PAL 0
 
 ROOM 1
@@ -2033,13 +2033,24 @@ R picked up a flower.
 
 DLG SPR_n
 """
-C: {
+{
   - {item "Flower"} == 1 ?
-
+    C: R, I told you I'm not ready for a relationship.
   - {item "Flower"} == 2 ?
-
+    C: Ok, R, here's the truth.
+    
+    C: I know I agreed to one date on Valentine's day.
+    C: And what I said a week after is still true.
+    C: I've done a lot of thinking about us and...
+    C: You don't offer me anything.
+    
+    C: But the real reason I ended things was...
+    C: I found someone I see a future with...
+    C: I found... X...
+    
+    C: I still want to be friends but... I'm sorry...
   - else ?
-
+    C: R, we need to talk about this.
 }
 """
 
