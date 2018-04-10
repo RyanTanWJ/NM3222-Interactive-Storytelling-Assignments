@@ -357,6 +357,29 @@ NAME Future 4 - The One?
 EXT 10,7 a 6,8
 PAL 2
 
+ROOM c
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+a,a,a,a,0,0,0,c,0,0,0,0,a,a,a,a
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,0,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,0,a,a,a,a,a
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+NAME Present Past 2 - Heartbreak
+ITM 6 11,4
+ITM 6 4,4
+EXT 10,12 0 8,8
+PAL 1
+
 TIL 10
 00011000
 00011000
@@ -1288,6 +1311,19 @@ NAME H
 DLG SPR_m
 POS b 7,7
 
+SPR 15
+00000000
+00111100
+01011010
+00011000
+01111110
+00011000
+00111100
+00100100
+NAME Heartbreak C
+DLG SPR_n
+POS c 6,6
+
 SPR A
 00011000
 00011000
@@ -1659,6 +1695,18 @@ ITM 5
 NAME Fried Chicken
 DLG ITM_5
 
+ITM 6
+01100110
+01011010
+00111100
+01011010
+01101110
+00010000
+00111000
+00001000
+NAME Flower
+DLG ITM_6
+
 DLG SPR_1
 "Tomorrow is a mystery."
 
@@ -1977,6 +2025,21 @@ H: {sequence
   - Is that so? But you seem to be doing quite well!
   - Catch a movie? Sure!
   - Thanks for the ride home, R. Goodnight!
+}
+"""
+
+DLG ITM_6
+R picked up a flower.
+
+DLG SPR_n
+"""
+C: {
+  - {item "Flower"} == 1 ?
+
+  - {item "Flower"} == 2 ?
+
+  - else ?
+
 }
 """
 
