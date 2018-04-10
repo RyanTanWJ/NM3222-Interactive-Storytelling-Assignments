@@ -81,8 +81,8 @@ a,a,a,a,a,a,a,0,0,a,a,a,a,a,a,a
 NAME Beginning
 EXT 0,7 1 4,10
 EXT 0,8 1 4,10
-EXT 15,7 a 6,8
-EXT 15,8 a 6,8
+EXT 15,7 b 8,7
+EXT 15,8 b 8,7
 EXT 7,15 3 6,6
 EXT 8,15 3 6,6
 PAL 0
@@ -293,7 +293,7 @@ PAL 2
 ROOM 9
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,0
+b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
@@ -337,23 +337,24 @@ EXT 11,15 9 7,9
 PAL 2
 
 ROOM b
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,b,b,b,b,27,0,28,29,0,27,0,2a,2b,b,b
-b,b,b,b,b,27,0,2a,2b,0,27,0,28,29,b,b
-b,b,b,b,b,27,0,28,29,0,27,0,2a,2b,b,b
-b,b,b,b,b,27,1v,22,22,1w,27,0,28,29,b,b
-b,b,b,b,b,27,1z,24,25,20,27,0,2a,2b,b,b
-b,b,b,b,b,23,0,0,0,0,26,0,28,29,b,b
-b,b,b,b,b,27,1z,2c,2d,20,27,0,2a,2b,b,b
-b,b,b,b,b,27,1y,21,21,1x,27,0,28,29,b,b
-b,b,b,b,b,27,0,28,29,0,27,0,2a,2b,b,b
-b,b,b,b,b,27,0,2a,2b,0,27,0,28,29,b,b
-b,b,b,b,b,27,0,28,29,0,27,0,2a,2b,b,b
-b,b,b,b,b,27,0,2a,2b,0,27,0,28,29,b,b
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,27,0,28,29,0,27,0,2a,2b,a,a
+a,a,a,a,a,27,0,2a,2b,0,27,0,28,29,a,a
+a,a,a,a,a,27,0,28,29,0,27,0,2a,2b,a,a
+a,a,a,a,a,27,1v,22,22,1w,27,0,28,29,a,a
+a,a,a,a,a,27,1z,24,25,20,27,0,2a,2b,a,a
+a,a,a,a,a,23,0,0,0,0,26,0,28,29,a,a
+a,a,a,a,a,27,1z,2c,2d,20,27,0,2a,2b,a,a
+a,a,a,a,a,27,1y,21,21,1x,27,0,28,29,a,a
+a,a,a,a,a,27,0,28,29,0,27,0,2a,2b,a,a
+a,a,a,a,a,27,0,2a,2b,0,27,0,28,29,a,a
+a,a,a,a,a,27,0,28,29,0,27,0,2a,2b,a,a
+a,a,a,a,a,27,0,2a,2b,0,27,0,28,29,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 NAME Future 4 - The One?
+EXT 10,7 a 6,8
 PAL 2
 
 TIL 10
@@ -477,6 +478,7 @@ TIL 20
 00000011
 00000011
 NAME Car Side Right
+WAL true
 
 TIL 21
 00000000
@@ -488,6 +490,7 @@ TIL 21
 11111111
 11111111
 NAME Car Side Bottom
+WAL true
 
 TIL 22
 11111111
@@ -499,6 +502,7 @@ TIL 22
 00000000
 00000000
 NAME Car Side Top
+WAL true
 
 TIL 23
 00000011
@@ -510,6 +514,7 @@ TIL 23
 11100000
 11000000
 NAME Open Car Door
+WAL true
 
 TIL 24
 00011111
@@ -1113,6 +1118,7 @@ TIL 1v
 11000000
 11000000
 NAME Car Large Top Left
+WAL true
 
 TIL 1w
 11111000
@@ -1124,28 +1130,31 @@ TIL 1w
 00000011
 00000011
 NAME Car Large Top Right
+WAL true
 
 TIL 1x
 00000011
 00000011
 00000011
-00000011
-00000111
-00001110
+01111111
+01010111
+01101110
 11111100
 11111000
 NAME Car Large Bottom Right
+WAL true
 
 TIL 1y
 11000000
 11000000
 11000000
-11000000
-11100000
-01110000
+11111110
+11101010
+01110110
 00111111
 00011111
 NAME Car Large Bottom Left
+WAL true
 
 TIL 1z
 11000000
@@ -1157,6 +1166,7 @@ TIL 1z
 11000000
 11000000
 NAME Car Large Side Left
+WAL true
 
 TIL 2a
 00000001
@@ -1182,25 +1192,26 @@ NAME Vert Road Marking Bottom Right
 
 TIL 2c
 00000000
-00111111
-00100000
-00100000
-00010000
-00010000
-00001111
 00000000
+00000000
+00000000
+01111111
+01000000
+00100000
+00011111
 NAME Rear Windshield Left
 WAL true
 
 TIL 2d
 00000000
-11111100
-00000100
-00000100
-00001000
-00001000
-11110000
 00000000
+00000000
+00000000
+11111110
+00000010
+00000100
+11111000
+NAME Rear Windshield Right
 WAL true
 
 SPR 10
@@ -1957,7 +1968,17 @@ V: {
 """
 
 DLG SPR_m
-H: 
+"""
+H: {sequence
+  - Oh wow, I know your playlist. 2SFH, right?
+  - Really? R&M is one of my favorite shows too!
+  - Hm? My club? It can be challenging to run.
+  - What about your club?
+  - Is that so? But you seem to be doing quite well!
+  - Catch a movie? Sure!
+  - Thanks for the ride home, R. Goodnight!
+}
+"""
 
 VAR H4
 0
