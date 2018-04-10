@@ -83,7 +83,7 @@ EXT 0,7 1 4,10
 EXT 0,8 1 4,10
 EXT 15,7 b 8,7
 EXT 15,8 b 8,7
-EXT 7,15 3 8,9
+EXT 7,15 d 7,7
 EXT 8,15 c 8,6
 PAL 0
 
@@ -380,27 +380,28 @@ a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 NAME Present Past 2 - Heartbreak
 ITM 6 11,4
 ITM 6 4,4
-EXT 10,12 0 8,8
+EXT 10,12 0 0,0
 PAL 1
 
 ROOM d
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-NAME Present Past 1 - 
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,0,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,0,a,a,a,a,a,a,a,a
+NAME Present Past 1 - Begging
+EXT 7,15 0 0,0
 PAL 1
 
 TIL 10
@@ -1321,7 +1322,7 @@ SPR 13
 00011000
 00011000
 00100100
-NAME B2
+NAME RB
 DLG SPR_5
 POS a 4,9
 
@@ -1372,6 +1373,19 @@ SPR 16
 NAME Broken R
 DLG SPR_o
 POS 3 8,11
+
+SPR 17
+00000100
+00000100
+00111100
+00100100
+00100100
+00111100
+00111100
+00111100
+NAME Begging Phone
+DLG SPR_p
+POS d 8,7
 
 SPR A
 00011000
@@ -2038,7 +2052,7 @@ R found some fried chicken.
 
 DLG SPR_5
 """
-B2: {
+RB: {
   - {item "Fried Chicken"} == 1 ?
     Here! I drew you a cat!
   - {item "Fried Chicken"} == 2 ?
@@ -2120,6 +2134,21 @@ R: {sequence
     
     R: Or if you think I've suffered enough.
     R: Walk on to the road.
+}
+"""
+
+DLG SPR_p
+"""
+R: Help...
+
+{shuffle
+  - JU: R? Where are you? I'm coming right now.
+  - RJ: I'll talk to you as long as you need...
+  - JO: R! ANSWER YOUR PHONE! YOU'RE SCARING ME!
+  - CK: Oh no.. R... Oh no... I wish I was there right now...
+  - N: Somethings are meant to happen. God finds a way.
+  - D: I think you are braver than most for having confessed...
+  - G: That's quite a story man, wish I could hug you right now.
 }
 """
 
