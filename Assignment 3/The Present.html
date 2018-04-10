@@ -1006,6 +1006,7 @@ SPR 12
 00111100
 00100100
 NAME V
+DLG SPR_l
 POS a 4,8
 
 SPR 13
@@ -1015,9 +1016,10 @@ SPR 13
 00011000
 00111100
 00011000
-00100100
+00011000
 00100100
 NAME B2
+DLG SPR_5
 POS a 4,9
 
 SPR A
@@ -1670,6 +1672,30 @@ B's {rbw}vomit{rbw} got stuck on R's shoe.
 
 DLG ITM_5
 R found some fried chicken.
+
+DLG SPR_5
+"""
+B2: {
+  - {item "Fried Chicken"} == 1 ?
+    Here! I drew you a cat!
+  - {item "Fried Chicken"} == 2 ?
+    R, this will pass. And then some day you'll meet The One!
+  - else ?
+    Oh no. R! Don't be sad!
+}
+"""
+
+DLG SPR_l
+"""
+V: {
+  - {item "Fried Chicken"} == 1 ?
+    Here! I drew you a cat!
+  - {item "Fried Chicken"} == 2 ?
+    R, this will pass. And then some day you'll meet The One!
+  - else ?
+    Oh no. R! Don't be sad!
+}
+"""
 
 VAR H4
 0
