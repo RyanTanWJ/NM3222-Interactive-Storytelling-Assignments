@@ -332,7 +332,28 @@ b,b,b,b,b,b,b,b,b,b,b,0,b,b,b,b
 NAME Future 3 - Work
 ITM 5 3,13
 ITM 5 12,8
+ITM 5 12,13
 EXT 11,15 9 7,9
+PAL 2
+
+ROOM b
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Future 4 - The One?
 PAL 2
 
 TIL 10
@@ -1003,6 +1024,15 @@ SPR 12
 00011000
 01111110
 00111100
+00111100
+00100100
+>
+00111100
+01011010
+10011001
+00011000
+00111100
+01111110
 00111100
 00100100
 NAME V
@@ -1679,9 +1709,11 @@ B2: {
   - {item "Fried Chicken"} == 1 ?
     Here! I drew you a cat!
   - {item "Fried Chicken"} == 2 ?
-    R, this will pass. And then some day you'll meet The One!
+    I understand R, but this will pass.
+  - {item "Fried Chicken"} == 3 ?
+    And then some day you'll meet The One!
   - else ?
-    Oh no. R! Don't be sad!
+    Oh no! R, Don't be sad!
 }
 """
 
@@ -1689,11 +1721,13 @@ DLG SPR_l
 """
 V: {
   - {item "Fried Chicken"} == 1 ?
-    Here! I drew you a cat!
+    See you have friends that care about you!
   - {item "Fried Chicken"} == 2 ?
-    R, this will pass. And then some day you'll meet The One!
+    And we can eat fried chicken together!
+  - {item "Fried Chicken"} == 3 ?
+    You're a good person, R. I'm sure you'll find someone.
   - else ?
-    Oh no. R! Don't be sad!
+    R! Don't waste time thinking about this kind of person!
 }
 """
 
