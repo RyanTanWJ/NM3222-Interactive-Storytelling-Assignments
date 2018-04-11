@@ -4,10 +4,10 @@
 <!-- HEADER -->
 <head>
 
-<title>The Present</title>
+<title></title>
 
 <script type="bitsyGameData" id="exportedGameData">
-The Present
+
 
 # BITSY VERSION 4.6
 
@@ -430,11 +430,11 @@ EXT 8,0 3 8,10
 PAL 2
 
 ROOM f
-a,a,a,a,a,a,0,0,0,a,a,a,a,a,a,a
-a,a,a,a,a,a,0,0,0,a,a,a,a,a,a,a
-a,a,a,a,a,a,0,0,0,a,a,a,a,a,a,a
-a,a,a,a,a,a,0,0,0,a,a,a,a,a,a,a
-a,a,a,a,a,a,0,0,0,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,a,a,a,a,d,0,d,a,a,a,a,a,a,a
 a,a,a,a,a,a,d,0,d,a,a,a,a,a,a,a
 a,a,a,a,a,a,d,0,d,a,a,a,a,a,a,a
 a,a,a,a,a,a,0,0,d,a,a,a,a,a,a,a
@@ -2287,7 +2287,7 @@ DLG SPR_q
 DLG SPR_k
 """
 CK: R! You promised you would stop being sad!
-CK: I got to go now...
+CK: I got to go now...{PF2 = 1}
 """
 
 DLG SPR_r
@@ -2299,20 +2299,20 @@ N: I'll talk to you another time.
 DLG SPR_s
 """
 I: You gotta promise to stop hurting yourself!
-I: I'll meet you soon!
+I: I'll meet you soon!{PF2 = 3}
 """
 
 DLG SPR_f
 """
 {
   - PF2 == 1 ?
-
+    R: I couldn't talk to him after that...
   - PF2 == 2 ?
-
+    R: And then N stopped talking to me...
   - PF2 == 3 ?
-
+    R: And I haven't heard from I since...
   - else ?
-
+    R: Not everyone can help you...{PF2 = 0}
 }
 """
 
