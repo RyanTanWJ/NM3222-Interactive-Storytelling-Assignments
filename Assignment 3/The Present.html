@@ -1899,6 +1899,8 @@ ITM 7
 01110000
 11100000
 11000000
+NAME Knife
+DLG ITM_7
 
 DLG SPR_1
 "Tomorrow is a mystery."
@@ -2276,14 +2278,6 @@ R: Help...
 }
 """
 
-DLG SPR_q
-"""
-{sequence
-  - 
-  - 
-}
-"""
-
 DLG SPR_k
 """
 CK: R! You promised you would stop being sad!
@@ -2293,7 +2287,7 @@ CK: I got to go now...{PF2 = 1}
 DLG SPR_r
 """
 N: R, just think about what I said.
-N: I'll talk to you another time.
+N: I'll talk to you another time.{PF2 = 2}
 """
 
 DLG SPR_s
@@ -2306,13 +2300,37 @@ DLG SPR_f
 """
 {
   - PF2 == 1 ?
-    R: I couldn't talk to him after that...
+    R: I couldn't talk to CK after that...{PF2 = 0}
   - PF2 == 2 ?
-    R: And then N stopped talking to me...
+    R: And then N stopped talking to me...{PF2 = 0}
   - PF2 == 3 ?
-    R: And I haven't heard from I since...
+    R: And I haven't heard from I since...{PF2 = 0}
   - else ?
-    R: Not everyone can help you...{PF2 = 0}
+    R: Not everyone can help you...
+}
+"""
+
+DLG ITM_7
+R slit his wrist.
+
+DLG SPR_q
+"""
+{
+  - {item "Knife"} == 1 ?
+    G: No stop that! You don't deserve this!
+  - else ?
+    G: What are you doing, R?
+  - {item "Knife"} == 2 ?
+    G: I said stop it, R! She's not worth it!
+  - {item "Knife"} == 3 ?
+    G: R! GIVE ME THOSE!
+    
+    G: ...
+    
+    G: There's nothing wrong with you, R.
+    G: She's not good enough for you. 
+    
+    G: Not the other way around.
 }
 """
 
