@@ -2106,10 +2106,13 @@ R took a shot of whiskey.
 {
   - {item "Whiskey"} == 1 ?
     He feels high.
+    Maybe R should talk to X.
   - {item "Whiskey"} == 2 ?
     He feels sad.
+    Maybe R should talk to X again.
   - {item "Whiskey"} == 3 ?
     He feels angry.
+    Maybe R should talk to X again.
 }
 """
 
@@ -2118,6 +2121,7 @@ DLG SPR_b
 {
   - H42 == 0 ?
     C: Hey R. You're my best friend, but...
+    R: But what...
   - H42 == 1 ?
     C: R, you just want to get in my pants.{H4 = 1}
   - H42 == 2 ?
@@ -2136,10 +2140,13 @@ DLG ITM_2
 {
   - {item "Beer"} == 1 ?
     R drank some beer! It numbs the pain a little...
+    Maybe R should talk to C.
   - {item "Beer"} == 2 ?
     R has enough liquid courage to confess!
+    Maybe R should talk to C again.
   - {item "Beer"} == 3 ?
     R can probably bear the rejection now.
+    Maybe R should talk to C again.
   - {item "Booze"} == 4 ?
     Maybe R should walk home.
 }
@@ -2196,6 +2203,7 @@ DLG SPR_e
   - H4 == 0 ?
     R: You called me... You said you didn't want to be alone...
     R: Who is he?{H42 = 1}
+    C: {wvy}RRRRRR{wvy}...
 }
 """
 
