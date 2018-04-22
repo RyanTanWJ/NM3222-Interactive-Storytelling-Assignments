@@ -2154,15 +2154,17 @@ DLG ITM_2
 DLG SPR_c
 """
 {
+  - W == 1 ?
+    X: You can leave through the side gate next to me.
   - {item "Whiskey"} == 1 ?
     X: Hey man, are you drunk already?
   - {item "Whiskey"} == 2 ?
     X: What? Why do you want to die?
   - {item "Whiskey"} == 3 ?
     X: Dude, you couldn't take me in a fight. You should go home.
-    L: I called you a cab.
+    X: I called you a cab.
     
-    L: You can leave through the side gate next to me.
+    X: You can leave through the side gate next to me. {W = 1}
   - else ?
     X: You want a cig?
 }
@@ -2337,7 +2339,7 @@ R: {sequence
   - You might not know the full story.
   - Or you know all I can fit of the story into this assignment.
   - So I give you, dear reader, my choice.
-  - To the left, you can return to the start.
+  - Walk to the left, and you can return to the start.
     R: To see the rest of my story if you have yet to.
     R: To the right, you take the path I have chosen.
     R: To struggle through the pain.
@@ -2440,6 +2442,9 @@ VAR Ask
 0
 
 VAR F
+0
+
+VAR W
 0
 
 
