@@ -6443,7 +6443,19 @@ var DialogRenderer = function() {
 
 	this.ClearTextbox = function() {
 		if(context == null) return;
-		textboxInfo.img = context.createImageData(textboxInfo.width*scale, textboxInfo.height*scale);
+
+		//create new image none exists
+		if(textboxInfo.img == null)
+			textboxInfo.img = context.createImageData(textboxInfo.width*scale, textboxInfo.height*scale);
+
+		// fill text box with black
+		for (var i=0;i<textboxInfo.img.data.length;i+=4)
+		{
+			textboxInfo.img.data[i+0]=0;
+			textboxInfo.img.data[i+1]=0;
+			textboxInfo.img.data[i+2]=0;
+			textboxInfo.img.data[i+3]=255;
+		}
 	};
 
 	var isCentered = false;
@@ -6951,7 +6963,7 @@ var spriteStartLocations = {};
 /* VERSION */
 var version = {
 	major: 4, // for file format / engine changes
-	minor: 6 // for editor changes and bugfixes
+	minor: 8 // for editor changes and bugfixes
 };
 function getEngineVersion() {
 	return version.major + "." + version.minor;
@@ -7325,6 +7337,12 @@ function stopGame() {
 	console.log("stop GAME!");
 
 	document.removeEventListener('keydown', onkeydown);
+	document.removeEventListener('keyup', onkeyup);
+
+	canvas.removeEventListener('touchstart', ontouchstart);
+	canvas.removeEventListener('touchmove', ontouchmove);
+	canvas.removeEventListener('touchend', ontouchend);
+
 	clearInterval(update_interval);
 }
 
@@ -7417,13 +7435,14 @@ function update() {
 	var curTime = Date.now();
 	deltaTime = curTime - prevTime;
 
-	//clear screen
-	ctx.fillStyle = "rgb(" + getPal(curPal())[0][0] + "," + getPal(curPal())[0][1] + "," + getPal(curPal())[0][2] + ")";
-	ctx.fillRect(0,0,canvas.width,canvas.height);
-	
 	if (!isNarrating && !isEnding) {
 		updateAnimation();
 		drawRoom( room[curRoom] ); // draw world if game has begun
+	}
+	else {
+		//make sure to still clear screen
+		ctx.fillStyle = "rgb(" + getPal(curPal())[0][0] + "," + getPal(curPal())[0][1] + "," + getPal(curPal())[0][2] + ")";
+		ctx.fillRect(0,0,canvas.width,canvas.height);
 	}
 
 	// if (isDialogMode) { // dialog mode
@@ -7998,7 +8017,7 @@ function parseWorld(file) {
 		curRoom = player().room;
 	}
 
-	console.log(names);
+	// console.log(names);
 }
 
 //TODO this is in progress and doesn't support all features
@@ -8634,7 +8653,7 @@ function parseDrawingCore(lines, i, drwId) {
 }
 
 function renderImages() {
-	console.log(" -- RENDER IMAGES -- ");
+	// console.log(" -- RENDER IMAGES -- ");
 
 	//init image store
 	for (pal in palette) {
@@ -8662,7 +8681,7 @@ function renderImages() {
 }
 
 function renderImageForAllPalettes(drawing) {
-	console.log("RENDER IMAGE");
+	// console.log("RENDER IMAGE");
 	for (pal in palette) {
 		// console.log(pal);
 
@@ -8671,7 +8690,7 @@ function renderImageForAllPalettes(drawing) {
 
 		// slightly hacky initialization of image store for palettes with more than 3 colors ~~~ SECRET FEATURE DO NOT USE :P ~~~
 		if(imageStore.render[pal][colStr] === undefined || imageStore.render[pal][colStr] === null) {
-			console.log("UNDEFINED " + colStr);
+			// console.log("UNDEFINED " + colStr);
 			imageStore.render[pal][colStr] = {};
 		}
 
@@ -8684,8 +8703,8 @@ function renderImageForAllPalettes(drawing) {
 		if ( imgSrc.length <= 1 ) {
 			// non-animated drawing
 			var frameSrc = imgSrc[0];
-			console.log(drawing);
-			console.log(imageStore);
+			// console.log(drawing);
+			// console.log(imageStore);
 			imageStore.render[pal][colStr][drawing.drw] = imageDataFromImageSource( frameSrc, pal, col );
 		}
 		else {
@@ -8783,7 +8802,15 @@ function drawItem(img,x,y,context) {
 	drawTile(img,x,y,context); //TODO these methods are dumb and repetitive
 }
 
-function drawRoom(room,context) {
+function drawRoom(room,context,frameIndex) { // context & frameIndex are optional
+	if (!context) { //optional pass in context; otherwise, use default (ok this is REAL hacky isn't it)
+		context = ctx;
+	}
+
+	//clear screen
+	context.fillStyle = "rgb(" + getPal(curPal())[0][0] + "," + getPal(curPal())[0][1] + "," + getPal(curPal())[0][2] + ")";
+	context.fillRect(0,0,canvas.width,canvas.height);
+
 	//draw tiles
 	for (i in room.tilemap) {
 		for (j in room.tilemap[i]) {
@@ -8796,21 +8823,23 @@ function drawRoom(room,context) {
 				}
 				else {
 					// console.log(id);
-					drawTile( getTileImage(tile[id],getRoomPal(room.id)), j, i, context );
+					drawTile( getTileImage(tile[id],getRoomPal(room.id),frameIndex), j, i, context );
 				}
 			}
 		}
 	}
+
 	//draw items
 	for (var i = 0; i < room.items.length; i++) {
 		var itm = room.items[i];
-		drawItem( getItemImage(item[itm.id],getRoomPal(room.id)), itm.x, itm.y, context );
+		drawItem( getItemImage(item[itm.id],getRoomPal(room.id),frameIndex), itm.x, itm.y, context );
 	}
+
 	//draw sprites
 	for (id in sprite) {
 		var spr = sprite[id];
 		if (spr.room === room.id) {
-			drawSprite( getSpriteImage(spr,getRoomPal(room.id)), spr.x, spr.y, context );
+			drawSprite( getSpriteImage(spr,getRoomPal(room.id),frameIndex), spr.x, spr.y, context );
 		}
 	}
 }
@@ -8820,7 +8849,7 @@ function getTileImage(t,palId,frameIndex) {
 
 	var drwId = t.drw;
 
-	if (!palId) palId = curPal();
+	if (!palId) palId = curPal(); // TODO : will this break on iOS?
 
 	if ( t.animation.isAnimated ) {
 		if (frameIndex != null) { // use optional provided frame index
