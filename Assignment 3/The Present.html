@@ -2347,34 +2347,26 @@ R: Help...
 DLG SPR_k
 """
 CK: R! You promised you would stop being sad!
-CK: I got to go now...{PF2 = 1}
+CK: I got to go now...
+R: I couldn't talk to CK after that...
 """
 
 DLG SPR_r
 """
 N: R, just think about what I said.
-N: I'll talk to you another time.{PF2 = 2}
+N: I'll talk to you another time.
+R: And then N stopped talking to me...
 """
 
 DLG SPR_s
 """
 I: You gotta promise to stop hurting yourself!
-I: I'll meet you soon!{PF2 = 3}
+I: I'll meet you soon!
+R: And I haven't heard from I since...
 """
 
 DLG SPR_f
-"""
-{
-  - PF2 == 1 ?
-    R: I couldn't talk to CK after that...{PF2 = 0}
-  - PF2 == 2 ?
-    R: And then N stopped talking to me...{PF2 = 0}
-  - PF2 == 3 ?
-    R: And I haven't heard from I since...{PF2 = 0}
-  - else ?
-    R: Not everyone can help you...
-}
-"""
+R: Not everyone can help you...
 
 DLG ITM_7
 R slit his wrist.
