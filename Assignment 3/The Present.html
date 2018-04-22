@@ -2006,7 +2006,7 @@ B: {
 DLG SPR_6
 """
 {
-  - {item "Booze"} == 4 ?
+  - {item "Booze"} >= 4 ?
     Girl: Go out with you? HAHAHAHAHAHA!
   - else ?
     R is too shy to talk to her.
@@ -2016,7 +2016,7 @@ DLG SPR_6
 DLG SPR_7
 """
 {
-  - {item "Booze"} == 4 ?
+  - {item "Booze"} >= 4 ?
     Girl: Oh, no, sorry. I have a boyfriend.
   - else ?
     R is too shy to talk to her.
@@ -2146,7 +2146,7 @@ DLG ITM_2
     Maybe R should talk to C again.
   - {item "Beer"} == 3 ?
     R can probably bear the rejection now.
-  - {item "Beer"} == 4 ?
+  - {item "Booze"} == 4 ?
     Maybe R should walk home.
 }
 """
@@ -2198,10 +2198,11 @@ DLG SPR_e
     R: Friends++? Friends with benefits?{H42 = 5}
   - H4 == 5 ?
     R: So this is what she really thinks about me...
-    R: I'm... breaking...
+    R: I can't breathe... It hurts...
   - H4 == 0 ?
     R: You called me... You said you didn't want to be alone...
     R: Who is he?{H42 = 1}
+    
     C: {wvy}RRRRRR{wvy}...
 }
 """
@@ -2304,6 +2305,8 @@ R picked up a flower.
 DLG SPR_n
 """
 {
+  - F == 1 ?
+    C: I still want to be friends but... I'm sorry...
   - {item "Flower"} == 1 ?
     C: R, I told you I'm not ready for a relationship.
   - {item "Flower"} == 2 ?
@@ -2318,7 +2321,7 @@ DLG SPR_n
     C: I found someone I see a future with...
     C: I found... X...
     
-    C: I still want to be friends but... I'm sorry...
+    C: I still want to be friends but... I'm sorry...{F = 1}
   - else ?
     C: R, we need to talk about this.
 }
@@ -2355,7 +2358,7 @@ R: Help...
   - CK: Oh no.. R... Oh no... I wish I was there right now...
   - N: Somethings are meant to happen. God finds a way.
   - D: I think you are braver than most for having confessed...
-  - G: That's quite a story man, wish I could hug you right now.
+  - GR: That's quite a story man, wish I could hug you right now.
 }
 """
 
@@ -2376,10 +2379,10 @@ R: And then N stopped talking to me...
 
 DLG SPR_s
 """
-I: You gotta promise to stop hurting yourself!
-I: I'll meet you soon!
+IV: You gotta promise to stop hurting yourself!
+IV: I'll meet you soon!
 
-R: And I haven't heard from I since...
+R: And I haven't heard from IV since...
 """
 
 DLG SPR_f
@@ -2402,7 +2405,6 @@ DLG SPR_q
     
     G: There's nothing wrong with you, R.
     G: She's not good enough for you. 
-    
     G: Not the other way around.
   - else ?
     G: What are you doing, R?
@@ -2435,6 +2437,9 @@ VAR PF2
 0
 
 VAR Ask
+0
+
+VAR F
 0
 
 
