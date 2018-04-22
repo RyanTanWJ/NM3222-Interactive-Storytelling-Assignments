@@ -2376,8 +2376,6 @@ DLG SPR_q
 {
   - {item "Knife"} == 1 ?
     G: No stop that! You don't deserve this!
-  - else ?
-    G: What are you doing, R?
   - {item "Knife"} == 2 ?
     G: I said stop it, R! She's not worth it!
   - {item "Knife"} == 3 ?
@@ -2389,6 +2387,18 @@ DLG SPR_q
     G: She's not good enough for you. 
     
     G: Not the other way around.
+  - else ?
+    G: What are you doing, R?
+}
+"""
+
+DLG ITM_8
+"""
+{
+  - Ask == 1 ?
+
+  - else ?
+    R: I should ask H out...
 }
 """
 
